@@ -1,13 +1,8 @@
-import "./styles/App.css";
-
-import Header from "./components/Header";
-
 function App() {
   return (
-    <>
-      <Header />
-      <h2>Lobos</h2>
-    </>
+    <div>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </div>
   );
 }
 
