@@ -123,7 +123,7 @@ const Header = () => {
             <button
               onClick={handleDropDown}
               type="button"
-              class="text-center inline-flex items-center text-sm font-bold px-5 py-3 leading-none  border-2 rounded  text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 lg:mt-0"
+              class=" text-center inline-flex items-center text-sm font-bold px-5 py-3 leading-none  border-2 rounded  text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 lg:mt-0"
             >
               <svg
                 class="w-5 h-5 mr-2"
@@ -179,7 +179,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <hr className="styledHr" style={{ height: 3 }} />
+      <hr className="styledHr" style={{ height: 4 }} />
     </div>
   );
 };
