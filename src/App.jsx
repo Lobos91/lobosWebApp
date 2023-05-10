@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
-// import Idea from "./components/Idea";
+import Idea from "./components/Idea";
 import Carousel from "./components/Carousel";
 
 function App() {
@@ -10,8 +10,10 @@ function App() {
       <Header />
       <Intro />
       <Carousel/>
-      {/* <Idea /> */}
-
+      <hr className="transitHr" />
+      <Idea />
+    
+      <br/> <br/>
       <Footer />
     </div>
   );

@@ -51,6 +51,7 @@ const Header = () => {
             <button
               class=" text-center inline-flex flex-wrap items-center  lg:mt-0 text-slate-900 hover:text-white mr-4 "
               onClick={handleSupport}
+              ref={dropdownRef}
             >
               <svg
                 class="w-6 h-6 mr-0.5"
@@ -139,7 +140,7 @@ const Header = () => {
           <div className="mr-10">
             <button
               onClick={handleDropDown}
-              ref={dropdownRef}
+
               type="button"
               class=" text-center inline-flex items-center text-sm font-bold px-5 py-3 leading-none  border-2 rounded  text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 lg:mt-0"
             >

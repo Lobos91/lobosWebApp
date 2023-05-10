@@ -3,6 +3,7 @@ import introBG2 from "../assets/introBG2.png";
 
 const Intro = () => {
   return (
+    <>
     <div
       style={{
         backgroundImage: `url(${introBG2})`,
@@ -37,9 +38,11 @@ const Intro = () => {
             bardziej w sprawy elitarnego Legionu, atmosfera również staje się
             coraz gęstsza.
           </p>
-        </div>
+        </div> 
       </div>
     </div>
+    <hr className="transitHr" />
+    </>
   );
 };
 
