@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import gothic_icon from "../assets/gothic_icon.png";
 import paypal from "../assets/paypal.png";
 import patronite from "../assets/patronite.png";
@@ -6,6 +6,9 @@ import patronite from "../assets/patronite.png";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+
 
   const handleDropDown = () => {
     setOpen(!isOpen);
@@ -18,6 +21,20 @@ const Header = () => {
   const handleDefinitiveEd = () => {
     alert("Prace w toku!");
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setOpen(false);
+      setSupportOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
 
   return (
     <div>
@@ -122,6 +139,7 @@ const Header = () => {
           <div className="mr-10">
             <button
               onClick={handleDropDown}
+              ref={dropdownRef}
               type="button"
               class=" text-center inline-flex items-center text-sm font-bold px-5 py-3 leading-none  border-2 rounded  text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 lg:mt-0"
             >
