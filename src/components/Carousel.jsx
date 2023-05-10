@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useRef  } from 'react';
 import 'tw-elements';
 import carousel1 from "../assets/carousel1.png";
 import carousel2 from "../assets/carousel2.png";
 import carousel3 from "../assets/carousel3.png";
 import carousel4 from "../assets/carousel4.png";
 
+
 const featuredImages = [carousel1, carousel2, carousel3, carousel4];
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [transition, setTransition] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const containerRef = useRef(null);
 
   const goToPreviousImage = () => {
     setTransition(true);
@@ -17,7 +20,7 @@ export default function Carousel() {
       const newIndex = (currentIndex - 1 + featuredImages.length) % featuredImages.length;
       setCurrentIndex(newIndex);
       setTransition(false);
-    }, 150); // Czas trwania animacji w milisekundach
+    }, 200); // Czas trwania animacji w milisekundach
   };
 
   const goToNextImage = () => {
@@ -26,13 +29,36 @@ export default function Carousel() {
       const newIndex = (currentIndex + 1) % featuredImages.length;
       setCurrentIndex(newIndex);
       setTransition(false);
-    }, 150); // Czas trwania animacji w milisekundach
+    }, 200); // Czas trwania animacji w milisekundach
+  };
+
+
+  const handleMouseDown = (event) => {
+    setStartX(event.clientX);
+  };
+
+
+  const handleMouseMove = (event) => {
+    if (!startX) return;
+    const difference = startX - event.clientX;
+    if (difference > 50) {
+      goToNextImage();
+      setStartX(0);
+    } else if (difference < -50) {
+      goToPreviousImage();
+      setStartX(0);
+    }
   };
 
   return (
-    <div className='w-full select-none relative '  style={{ background: 'orange'}}>
+    <div className='w-full select-none relative '  style={{ background: 'red'}}  
+    ref={containerRef}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={() => setStartX(0)}
+      onMouseLeave={() => setStartX(0)}>
     <div
-      className={`transition-opacity duration-150 ${transition ? 'opacity-40' : 'opacity-100'}`}
+      className={`transition-opacity duration-200 ${transition ? 'opacity-60' : 'opacity-100'}`}
     >
       <img src={featuredImages[currentIndex]} alt='' style={{ width: '100%'}}/>
     </div>
