@@ -1,16 +1,17 @@
 import React from "react";
-import introBG1 from "../assets/lobosbg1.png";
+import introBG2 from "../assets/introBG2.png";
 
 const Intro = () => {
   return (
-    <div className="relative w-full h-full">
-      <img
-        src={introBG1}
-        alt="Zdjęcie z dżungli w Lobos"
-        className="absolute top-0 right-0 object-cover w-full  "
-        style={{ height: 900 }}
-      />
-      <div className="absolute  text-white w-4/12 pt-10 pl-20 pb-10 ">
+    <div
+      style={{
+        backgroundImage: `url(${introBG2})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        minHeight: 800,
+      }}
+    >
+      <div className="  text-white w-4/12 pt-10 pl-20 pb-10">
         <h1 className="text-orange-500 text-3xl pb-2">Prolog</h1>
         <div className=" leading-9 ">
           <p>
