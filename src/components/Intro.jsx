@@ -41,7 +41,7 @@ const Intro = () => {
         </div> 
       </div>
     </div>
-    <hr className="transitHr" />
+    <hr className="styledHr" style={{height: 3}}/>
     </>
   );
 };

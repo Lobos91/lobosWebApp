@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="h-9 bg-gray-900 text-center text-sm ">
         <span className="text-white mt-1 animate-pulse">&#169; 2023 </span>
         <span className="text-red-500 animate-pulse">
-          <a href="https://github.com/Lobos91">Lobos</a>{" "}
+          <a href="https://github.com/Lobos91?tab=repositories">Lobos</a>{" "}
         </span>
       </div>
     </footer>

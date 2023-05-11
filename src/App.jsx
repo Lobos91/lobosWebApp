@@ -10,10 +10,10 @@ function App() {
       <Header />
       <Intro />
       <Carousel/>
-      <hr className="transitHr" />
+      <hr className="styledHr" style={{height: 3}}/>
       <Idea />
     
-      <br/> <br/>
+      <br/> 
       <Footer />
     </div>
   );

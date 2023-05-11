@@ -11,26 +11,15 @@ body {
 }
 
 .styledHr {
-  border: 0;
+  border: none;
   height: 1px;
   /* background-color: aqua; */
   background-image: linear-gradient(
     to right,
-    rgba(20, 20, 20, 0.707),
-    rgb(173, 109, 109),
-    rgba(7, 8, 8, 0.77)
+    rgb(20, 20, 20),
+    rgb(145, 16, 16),
+    rgb(7, 8, 8)
   );
 }
 
-.transitHr {
-  border: none;
-  height: 7px;
-  /* background-color: aqua; */
-  background-image: linear-gradient(
-    to right,
-    rgba(20, 20, 20, 0.707),
-    rgb(85, 9, 9),
-    rgba(7, 8, 8, 0.77)
-  );
 
-}
