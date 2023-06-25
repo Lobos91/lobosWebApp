@@ -4,7 +4,7 @@ import introBG2 from "../assets/introBG2.png";
 const Intro = () => {
   return (
     <>
-    <div
+    <div className="mt-16"
       style={{
         backgroundImage: `url(${introBG2})`,
         backgroundRepeat: "no-repeat",
@@ -33,8 +33,7 @@ const Intro = () => {
             wpadło wielu rozrabiaków i bandyckich grup.
           </p>
           <p>
-            Ponad to, w dolinie stacjonują elitarne wojska królestwa oraz
-            mroczne siły. Z biegiem czasu, gdy nasz bohater wikła się coraz
+            Ponad to, w dolinie stacjonują elitarne wojska królestwa wysłane z misją najwyższej wagi przez samego władce. Z biegiem czasu, gdy nasz bohater wikła się coraz
             bardziej w sprawy elitarnego Legionu, atmosfera również staje się
             coraz gęstsza.
           </p>

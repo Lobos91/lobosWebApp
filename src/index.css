@@ -5,7 +5,7 @@
 
 body {
   /* min-width: auto; */
-  /* background-color: #444a48; */
+  background-color: #202020;
   /* color: white; */
   font-family: "Century Gothic";
 }
@@ -13,7 +13,7 @@ body {
 .styledHr {
   border: none;
   height: 1px;
-  /* background-color: aqua; */
+
   background-image: linear-gradient(
     to right,
     rgb(20, 20, 20),

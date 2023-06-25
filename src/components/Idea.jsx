@@ -6,7 +6,7 @@ const Idea = () => {
     <>
     <div
       style={{
-        backgroundColor: '#202020',
+
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
