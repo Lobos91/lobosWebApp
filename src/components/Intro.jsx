@@ -12,12 +12,13 @@ const Intro = () => {
         minHeight: 800,
       }}
     >
+      
       <div className="  text-white w-4/12 pt-10 pl-20 pb-10">
         <h1 className="text-orange-500 text-3xl pb-2">Prolog</h1>
         <div className=" leading-9 ">
           <p>
             Lobos to modyfikacja do Gothic 2 typu total conversion, osadzona w
-            zupełnie nowym uniwersum niezwiązanym z orginalną grą.
+            zupełnie nowym uniwersum niezwiązanym z oryginalną grą.
           </p>
           <p>
             Akcja modyfikacji toczy się w starożytnych czasach, gdzie
@@ -30,17 +31,20 @@ const Intro = () => {
           </p>
           <p>
             Ich wyprawa jednak okazuje się fiaskiem. Na podobny pomysł bowiem
-            wpadło wielu rozrabiaków i bandyckich grup.
+            wpadło wielu rozrabiaków i bandyckich grup. Życie naszego bohatera zostaje wywrócone do góry nogami, a jedyną siłą napędową która pomaga mu stawić czoła ogromnym wyzwaniom jest pragnienie zemsty.
           </p>
           <p>
             Ponad to, w dolinie stacjonują elitarne wojska królestwa wysłane z misją najwyższej wagi przez samego władce. Z biegiem czasu, gdy nasz bohater wikła się coraz
             bardziej w sprawy elitarnego Legionu, atmosfera również staje się
             coraz gęstsza.
           </p>
+          
         </div> 
       </div>
     </div>
-    <hr className="styledHr" style={{height: 3}}/>
+      <hr className="styledHr" style={{height: 3}}/>
+   
+   
     </>
   );
 };

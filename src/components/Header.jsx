@@ -2,11 +2,17 @@ import React, { useState, useEffect, useRef } from "react";
 import gothic_icon from "../assets/gothic_icon.png";
 import paypal from "../assets/paypal.png";
 import patronite from "../assets/patronite.png";
+import { Modal } from "./Modal";
+
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [moddb, setModdb] = useState("");
+  const [googleDrive, setGoogleDrive] = useState("");
+  const [title, setTitle] = useState('')
 
 
 
@@ -28,6 +34,28 @@ const Header = () => {
       setSupportOpen(false);
     }
   };
+
+  function handleLobos() {
+    setModalOpen(true);
+    setGoogleDrive('https://drive.google.com/file/d/1vOKSHx_zaR4GHkUyvwZLgADwT4r5QloS/view?usp=drive_link');
+    setModdb('https://www.moddb.com/games/gothic-ii-the-night-of-the-raven/downloads/lobos-pena-wersja-instalacja-rczna');
+    setTitle('Gothic 2 Lobos')
+  }
+
+  function handleLobosUltra() {
+    setModalOpen(true);
+    setGoogleDrive('https://drive.google.com/drive/u/0/folders/1GCeHvSgS_pU4g1Mg7jGEIkz8t6aSYqLE');
+    setModdb('https://www.moddb.com/downloads/lobos-ultra-pena-wersja1');
+    setTitle('Gothic 2 Lobos Ultra+')
+  }
+
+  // function handleLobosDefinitiveEdition() {
+  //   setModalOpen(true);
+  //   setGoogleDrive('https://drive.google.com/file/d/1vOKSHx_zaR4GHkUyvwZLgADwT4r5QloS/view?usp=drive_link');
+  //   setModdb('https://www.moddb.com/games/gothic-ii-the-night-of-the-raven/downloads/lobos-pena-wersja-instalacja-rczna');
+  //   setTitle('Gothic 2 Lobos Definitive Edition')
+  // }
+
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
@@ -178,38 +206,34 @@ const Header = () => {
             >
               <ul class="py-2 text-sm text-gray-700 dark:text-black  ">
                 <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-500 hover:text-white "
-                  >
-                    Gothic 2 Lobos
-                  </a>
+                  <button onClick={(e) => {handleLobos(); e.stopPropagation();}}
+                    class="w-44 px-4 py-2 hover:bg-gray-500 hover:text-white ">
+                      G2NK Lobos
+                  </button>
+                 
                 </li>
                 <hr className=" border-1 border-white" />
                 <li>
-                  <a
-                    href="#"
-                    class="block pl-4 py-2 pr-3 hover:bg-gray-500 hover:text-white"
+                  <button onClick={(e) => {handleLobosUltra(); e.stopPropagation();}}
+                    class="w-44 block pl-4 py-2 pr-3 hover:bg-gray-500 hover:text-white"
                   >
-                    Gothic 2 Lobos Ultra+
-                  </a>
+                    G2NK Lobos Ultra+
+                  </button>
                 </li>
                 <hr className=" border-1 border-white" />
                 <li>
-                  <a
-                    href="#"
-                    onClick={handleDefinitiveEd}
+                   <button onClick={() => alert('Prace w toku!')}
                     class="block px-4 py-2 hover:bg-gray-500 hover:text-white"
                   >
-                    Gothic 2 Lobos Definitive Edition
-                  </a>
+                    G2NK Lobos Definitive Edition
+                  </button>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-      <hr className="styledHr" style={{ height: 4 }} />
+      {isModalOpen && <Modal closeModal={setModalOpen} moddb={moddb} googleDrive={googleDrive} version={title}/>}      
     </div>
   );
 };
