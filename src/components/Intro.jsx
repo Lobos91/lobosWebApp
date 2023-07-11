@@ -16,7 +16,7 @@ const Intro = () => {
           minHeight: 800,
         }}
       >
-        <div className="  text-white w-4/12 pt-10 pl-20 pb-10">
+        <div className="  text-white w-4/12 pt-14 pl-12 pb-10">
           <h1 className="text-orange-500 text-3xl pb-2">Prolog</h1>
           <div className=" leading-9 ">
             <p>{t("intro.p1")}</p>

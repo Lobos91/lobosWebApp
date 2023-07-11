@@ -16,8 +16,13 @@
     "googledrive": "Download from Google Drive",
     "youaredownloading": "You are about to download: "
   },
-  "support": "Support me",
-  "guestbook": "Guest book",
-  "installation": "Installation",
-  "download": "Download"
+  "installation": {
+    "header": "Gothic and mod installation step by step"
+  },
+  "header": {
+    "support": "Wesprzyj",
+    "guestbook": "Compedium",
+    "installation": "Instalacja",
+    "download": "Pobieralnia"
+  }
 }

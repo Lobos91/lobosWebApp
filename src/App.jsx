@@ -1,25 +1,25 @@
 import { Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
 import Header from "./components/Header";
+import Installation from "./components/Installation";
 import Footer from "./components/Footer";
-import Intro from "./components/Intro";
-import Idea from "./components/Idea";
-import Carousel from "./components/Carousel";
-import { References}  from "./components/References";
-
+import Compedium from "./components/Compedium";
 
 function App() {
   return (
-   <Suspense fallback={'Loading...'}>
-     <div className="relative">
-      <Header />
-      <Intro />
-      <Idea />
-      <Carousel/>
-      <References/>
-      <Footer />
-     </div>
-   </Suspense>
-   
+    <Suspense fallback={"Loading..."}>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Installation" element={<Installation />} />
+          <Route path="/Compedium" element={<Compedium />} />
+        </Routes>
+
+        <Footer />
+      </Router>
+    </Suspense>
   );
 }
 

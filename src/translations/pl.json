@@ -7,7 +7,7 @@
     "p5": "Ponad to, w dolinie stacjonują elitarne wojska królestwa wysłane z misją najwyższej wagi przez samego władce. Z biegiem czasu, gdy nasz bohater wikła się coraz bardziej w sprawy elitarnego Legionu, atmosfera również staje się coraz gęstsza."
   },
   "idea": {
-    "p1": "To, na co szczególnie zwróciłem uwagę, to dbałość o szczegóły, wyważony balans i logika, by w modzie wszystko znalazło swoje uzasadnienie, niebyło wyrwane z kontekstu będąc przypadkowo pozlepianą modderską fantazją. Nieprzemyślane kwestie dialogowe i misje, potężne artefakty czy inne „mega” bronie, którymi posiekamy większość potworów już w połowie gry to zjawisko, które skutecznie odbiera chęć do kontynuowania rozgrywki. Skupiłem się na tym aby rozgrywka przybrała bardziej „realną” formę wliczając w to świat, dialogi, ekonomię, postacie, potwory i przedmioty, gdzie super ekwipunek czy złoto nie leżą na ziemi tylko trzeba się o to postarać.",
+    "p1": "To, na co szczególnie zwróciłem uwagę, to dbałość o szczegóły, wyważony balans i logika, by w modzie wszystko znalazło swoje uzasadnienie, niebyło wyrwane z kontekstu będąc przypadkowo pozlepianą modderską fantazją. Nieprzemyślane kwestie dialogowe i misje, potężne artefakty czy inne „mega” bronie, którymi posiekamy większość potworów już w połowie gry to zjawisko, które skutecznie odbiera chęć do kontynuowania rozgrywki. Skupiłem się na tym aby gra przybrała bardziej „realną” formę wliczając w to świat, dialogi, ekonomię, przeciwników, postacie i przedmioty, gdzie super ekwipunek czy złoto nie leżą na ziemi tylko trzeba się o to postarać.",
     "p2": "Nawet najbardziej starannie zrobiony mod ze świetną fabułą może okazać się nudny lub niepełny jeśli zabraknie w nim balansu i dobrze zaprojektowanej ekonomii. Te 2 czynniki są kluczem do stworzenia udanych gier RPG opartych o rozwój postaci.",
     "modidea": "Idea modyfikacji"
   },
@@ -16,8 +16,13 @@
     "googledrive": "Pobierz z Google Drive",
     "youaredownloading": "Pobierasz: "
   },
-  "support": "Wesprzyj",
-  "guestbook": "Księga gości",
-  "installation": "Instalacja",
-  "download": "Pobieralnia"
+  "installation": {
+    "header": "Instalacja Gothica i modyfikacji krok po kroku"
+  },
+  "header": {
+    "support": "Wesprzyj",
+    "guestbook": "Kompedium",
+    "installation": "Instalacja",
+    "download": "Pobieralnia"
+  }
 }
