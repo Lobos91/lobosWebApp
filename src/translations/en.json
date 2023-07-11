@@ -1,0 +1,23 @@
+{
+  "intro": {
+    "p1": "Lobos is a total conversion mod for Gothic 2, set in a completely new universe unrelated to the original game.",
+    "p2": "The action of modification takes place in ancient times, where the Kingdom of Lobos reigns supreme.",
+    "p3": "In the modification, we play the role of a farmer from a good family who set off with his friends to a mysterious valley rich in gold and magical ore deposits to get rich quickly.",
+    "p4": "However, their expedition turns out to be a fiasco. Many troublemakers and bandit groups came up with a similar idea. Our hero's life is turned upside down, and the only driving force that helps him face enormous challenges is the desire for revenge.",
+    "p5": "In addition, the Elite Legion of the Kingdom is stationed in the valley, sent on a mission of the highest importance by the King himself. Over time, as our hero becomes more and more involved in the affairs of the Elite Legion, the atmosphere also becomes denser."
+  },
+  "idea": {
+    "p1": "What I particularly paid attention to was caring about detail, good balance and logic, so that everything in modyfication have it's purpose and destination and was not taken out of context being randomly glued together. Bad and clumsy dialogue lines and missions, powerful artifacts or other „super” weapons with which we will chop most of the monsters already in the middle of the game is something that effectively takes away the desire to continue the game. I focused on making the gameplay take a more „real” form, including the world, dialogues, economy, characters, monsters and items, where super equipment or gold are not lying on the ground, but you have to put some efford to get them.",
+    "p2": "Even the most carefully made mod with a great story can turn out to be boring or incomplete if it lacks balance and a well-designed economy. These 2 factors are the key to creating successful RPGs.",
+    "modidea": "The idea of modification"
+  },
+  "modal": {
+    "moddb": "Download from Moddb",
+    "googledrive": "Download from Google Drive",
+    "youaredownloading": "You are about to download: "
+  },
+  "support": "Support me",
+  "guestbook": "Guest book",
+  "installation": "Installation",
+  "download": "Download"
+}

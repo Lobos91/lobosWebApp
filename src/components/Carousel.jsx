@@ -102,6 +102,7 @@ export default function Carousel() {
         </svg>
         <span className="sr-only">Next</span>
       </button>
+      <hr className="styledHr" style={{height: 3}}/>
     </div>
   );
 }
