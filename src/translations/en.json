@@ -17,12 +17,12 @@
     "youaredownloading": "You are about to download: "
   },
   "installation": {
-    "header": "Gothic and mod installation step by step"
+    "header": "Gothic and mod installation guide"
   },
   "header": {
-    "support": "Wesprzyj",
+    "support": "Support me",
     "guestbook": "Compedium",
-    "installation": "Instalacja",
-    "download": "Pobieralnia"
+    "installation": "Installation",
+    "download": "Download"
   }
 }

@@ -97,11 +97,11 @@ const Header = () => {
     <div className="navigation">
       <nav className="flex fixed top-0 left-0 right-0 items-center justify-between flex-wrap bg-amber-600 hover:bg-red-600 transition-colors duration-500 p-4 ">
         <button
-          className="flex items-center flex-shrink-0 text-white mr-6 hover:animate-ping"
+          className="flex items-center flex-shrink-0 text-white mr-6 "
           onClick={() => navigate("/")}
         >
           <img src={gothic_icon} style={{ height: 42, width: 42 }} />
-          <span className="font-bold text-3xl tracking-tight text-amber-950">
+          <span className="font-bold text-3xl tracking-tight text-amber-950 hover:text-black">
             othic II Lobos
           </span>
         </button>
@@ -112,7 +112,7 @@ const Header = () => {
         >
           <div className="text-base lg:flex-grow mt-4">
             <button
-              className=" text-center inline-flex flex-wrap items-center  lg:mt-0 text-slate-900 hover:text-white mr-4 "
+              className=" text-center inline-flex flex-wrap items-center font-bold lg:mt-0 text-slate-900 hover:text-white mr-4 "
               onClick={handleSupport}
               ref={dropdownRef}
             >
@@ -183,9 +183,9 @@ const Header = () => {
               </ul>
             </div>
 
-            <a
-              href="#responsive-header"
-              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4"
+            <button
+              onClick={() => navigate("/compedium")}
+              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4 font-bold"
             >
               <svg
                 className="w-6 h-6 mr-0.5"
@@ -202,12 +202,11 @@ const Header = () => {
                 ></path>
               </svg>
               {t("header.guestbook")}
-            </a>
+            </button>
 
             <button
-              // href="#responsive-header"
               onClick={() => navigate("/installation")}
-              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4"
+              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4 font-bold"
             >
               <svg
                 fill="none"

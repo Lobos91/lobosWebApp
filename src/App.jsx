@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Installation from "./components/Installation";
 import Footer from "./components/Footer";
 import Compedium from "./components/Compedium";
+import Noobguide from "./components/Noobguide";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Installation" element={<Installation />} />
           <Route path="/Compedium" element={<Compedium />} />
+          <Route path="/Compedium/Noobguide" element={<Noobguide />} />
         </Routes>
 
         <Footer />

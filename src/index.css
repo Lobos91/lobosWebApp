@@ -21,9 +21,9 @@ body {
 
   background-image: linear-gradient(
     to right,
-    rgb(20, 20, 20),
+    #202020,
     rgb(145, 16, 16),
-    rgb(7, 8, 8)
+    #202020
   );
 }
 
