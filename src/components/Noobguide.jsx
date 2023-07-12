@@ -48,7 +48,7 @@ const Noobguide = () => {
           </article>
           <h1>
             Inwestowanie w obrażenia jakie zadajemy przeciwnikom powinno stać
-            się priorytetem grając w każdą modyfikację, a w szczególności w
+            się priorytetem grając w każdą modyfikacje, a w szczególności w
             Lobosa.
           </h1>
           <hr className="styledHr mt-4 mb-2" />
@@ -109,13 +109,16 @@ const Noobguide = () => {
             tymi przeciwnikami później, gdy będziemy w stanie przebijać się
             przez ich pancerz. Niestety niewiele modów jest dobrze
             zbalansowanych i czasami gra wymusza zmierzenie się ze zbyt trudnym
-            przeciwnikiem na aktualny etap gry.
+            przeciwnikiem na aktualnym etapie gry.
             <h1>
               Na każdego przeciwnika w Gothicu jest sposób. Grając pod siłę
               najlepszą obroną jest odskok do tyłu. Grając w ten sposób na 99%
-              nie damy się trafić. Blokowanie ciosów czasami zawodzi. O
-              bugowaniu na kamieniach, skałach i innych elementach otoczenia nie
-              warto wspominać, nie jest to coś, co warto promować.
+              nie damy się trafić. Blokowanie ciosów czasami zawodzi. Bugowanie
+              przeciwników na skałach i elementach otoczenia nie jest czymś, co
+              warto promować, ale jeśli koniecznie trzeba coś zabić to
+              najskuteczniej dopchać potwora do ściany i atakować w lewo i prawo
+              tak aby niezdążył zadać ciosu. Szczególnie skuteczne przeciw
+              zębaczom i jaszczurom.
             </h1>
           </article>
         </div>

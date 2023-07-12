@@ -6,6 +6,7 @@ import Installation from "./components/Installation";
 import Footer from "./components/Footer";
 import Compedium from "./components/Compedium";
 import Noobguide from "./components/Noobguide";
+import Lobosguide from "./components/Lobosguide";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Installation" element={<Installation />} />
           <Route path="/Compedium" element={<Compedium />} />
           <Route path="/Compedium/Noobguide" element={<Noobguide />} />
+          <Route path="/Compedium/lobosguide" element={<Lobosguide />} />
         </Routes>
 
         <Footer />
