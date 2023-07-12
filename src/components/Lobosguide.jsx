@@ -1,6 +1,6 @@
 import React from "react";
 
-const lobosguide = () => {
+const Lobosguide = () => {
   return (
     <div className="pt-28 text-white text-center">
       <article className="flex pb-2">
@@ -30,4 +30,4 @@ const lobosguide = () => {
   );
 };
 
-export default lobosguide;
+export default Lobosguide;
