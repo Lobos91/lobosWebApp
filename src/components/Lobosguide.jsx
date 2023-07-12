@@ -1,5 +1,3 @@
-import React from "react";
-
 const Lobosguide = () => {
   return (
     <div className="pt-28 text-white text-center">
