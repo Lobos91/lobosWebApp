@@ -50,7 +50,7 @@ export default function Carousel() {
 
   return (
     <div
-      className="w-full select-none relative "
+      className="w-full select-none relative  z-20"
       style={{ background: "gray" }}
       ref={containerRef}
       onMouseDown={handleMouseDown}

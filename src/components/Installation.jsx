@@ -6,9 +6,9 @@ import piorun from "../assets/piorun2.png";
 const Installation = () => {
   const { t } = useTranslation("");
   return (
-    <div className="flex">
-      <div className="w-1/2 pr-4">
-        <div className="pt-28 pl-10 text-white space-y-2 space-x-2 pb-12 max-w-3xl">
+    <div className="flex ">
+      <div className="w-2/3 pr-4 pt-28 ">
+        <div className="pl-10 text-white space-y-2 space-x-2 pb-12 max-w-3xl">
           <h1 className=" text-2xl pb-4 text-orange-400">
             {t("installation.header")}
           </h1>
@@ -103,10 +103,13 @@ const Installation = () => {
           </h1>
         </div>
       </div>
-      <div className="w-1/2 pl-4 ">
-        <div>
-          <img src={piorun} className="animate-pulse" />
-        </div>
+      <div className="w-1/3">
+        <img
+          src={piorun}
+          className="z-0 animate-pulse fixed mt-16 "
+          alt="Galos"
+          style={{ height: 900 }}
+        />
       </div>
     </div>
   );
