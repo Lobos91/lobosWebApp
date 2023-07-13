@@ -1,12 +1,12 @@
 import React from "react";
-import galos from "../assets/galos.png";
+import galos from "../../assets/galos.png";
 import { useState } from "react";
 
 const Changelog = () => {
   const [allChanges, setAllChanges] = useState(true);
 
   return (
-    <div className="pt-28 pr-10 pb-24 text-white">
+    <div className="pt-28  pb-24 text-white">
       <h1 className="text-orange-600 text-3xl pb-4 text-center">
         Lista zmian w Definitive Edition
       </h1>
@@ -24,9 +24,9 @@ const Changelog = () => {
           Pokaż wszystkie zmiany
         </button>
       </div>
-      <article className="flex pl-12">
+      <article className="flex pl-20">
         <div className="w-2/3">
-          <ul className="list-disc">
+          <ul className="list-disc ">
             <li>
               Pełny polski dubbing do moda nagrany przeze mnie, graczy, widzów
               oraz profesjonalnych aktorów
@@ -108,7 +108,9 @@ const Changelog = () => {
           {allChanges ? (
             <ul
               className={
-                allChanges ? "list-disc animate-pulse temporary-bounce " : ""
+                allChanges
+                  ? "list-disc animate-pulse temporary-bounce text-blue-100"
+                  : ""
               }
             >
               <li>

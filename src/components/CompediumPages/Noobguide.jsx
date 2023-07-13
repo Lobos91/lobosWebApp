@@ -1,6 +1,6 @@
 import React from "react";
-import uriziel from "../assets/urizliel.png";
-import kusza from "../assets/kusza.png";
+import uriziel from "../../assets/urizliel.png";
+import kusza from "../../assets/kusza.png";
 import { useNavigate } from "react-router-dom";
 
 const Noobguide = () => {
@@ -51,7 +51,9 @@ const Noobguide = () => {
           <h1>
             Inwestowanie w obrażenia jakie zadajemy przeciwnikom powinno stać
             się priorytetem grając w każdą modyfikacje, a w szczególności w
-            Lobosa.
+            Lobosa. To od ilości twojej siły lub zręczności będzie zależeć czy
+            walka jest dla ciebie łatwa i siekasz przeciwnika w 5 sekund czy też
+            męczysz się z nim kilka minut.
           </h1>
           <hr className="styledHr mt-4 mb-2" />
           <article>
@@ -120,8 +122,8 @@ const Noobguide = () => {
               nie jest czymś, co warto promować, ale jeśli koniecznie trzeba coś
               zabić to najskuteczniej dopchać potwora do ściany i atakować w
               lewo i prawo tak aby niezdążył zadać ciosu. Nie ma sensu męczyć
-              się z jaszczurem czy zębaczem na otwartej przestrzeni, jeśli obok
-              jest skała.
+              się z jaszczurem czy zębaczem na otwartej przestrzeni, jeśli jest
+              możliwość zablokowania go na skale obok.
             </h1>
           </article>
           <hr className="styledHr mt-4 mb-2" />
@@ -130,14 +132,14 @@ const Noobguide = () => {
               Zbieraj wszystko co znajdziesz
             </h1>
             Są modyfikacje gdzie balans i ekonomia nie istnieją. Również
-            oryginalny gothic nie był zbalansowany, a od 2 rozdziału zbieranie
-            każdej roślinki i przedmiotu traciło sens ponieważ złota było za
-            dużo. W dobrze zbalansowanych modach ten problem niewystępuje
-            dlatego ważne jest, by zbierać cenne przedmioty, broń i ekwipunek po
-            pokonanych przeciwnikach, a najlepiej zbierać wszystko. Od przybytku
-            jeszcze głowa niebolała, a znalezione przedmioty często mogą się
-            przydać w najmniej oczekiwanym momencie. W moim modzie poświęciłem
-            zagadnieniu ekonomi szczególne miejsce. Więcej o tym w{" "}
+            oryginalny gothic był pozbawiony balansu, a od 2 rozdziału zbieranie
+            każdej roślinki i przedmiotu traciło sens ponieważ nie było już co
+            robić ze złotem i rudą. W dobrze zbalansowanych modach ten problem
+            niewystępuje dlatego ważne jest, by zbierać cenne przedmioty, broń i
+            ekwipunek po pokonanych przeciwnikach, a najlepiej zbierać wszystko.
+            Od przybytku jeszcze głowa niebolała, a znalezione przedmioty często
+            mogą się przydać w najmniej oczekiwanym momencie. W moim modzie
+            poświęciłem zagadnieniu ekonomi szczególne miejsce. Więcej o tym w{" "}
             <span
               className="cursor-pointer text-red-500 hover:animate-pulse"
               onClick={() => navigation("/compedium/Lobosguide")}
@@ -160,7 +162,9 @@ const Noobguide = () => {
             o modach, które są wymagające i mają zaprojektowaną jakąkolwiek
             ekonomię. Jeśli grasz w podstawowego Gothica to eksploracja czy
             bicie wszystkiego nie jest takie ważne. Grę ukończysz bez większych
-            problemów nawet ze średnimi statystykami.
+            problemów nawet ze średnimi statystykami. W przypadku Lobosa, grę
+            również zdołasz ukończyć z kiepskimi statystykami, ale po co tak się
+            męczyć?
           </article>
           <hr className="styledHr mt-4 mb-2" />
           <article>
@@ -168,24 +172,24 @@ const Noobguide = () => {
             Na koniec warto wspomnieć o oczekiwaniach jakie rodzą się w głowach
             niektórych osób. Jeśli denerwujesz się, że po wbiciu marnych 60
             punktów siły twój przeciwnik nie pada na 2 strzały, to może czas
-            zagrać w coś łatwiejszego? Może Gothic 1 na marvinie, bo bez niego
-            nadal będzie ci zbyt ciężko? Może Quake 3 Arena z botami na łatwym?
-            Albo grzybobranie w Zielonym Gaju? Osobiście gra od razu by mnie
-            znudziła, gdybym z łatwością rozwalał każdego przeciwnika, a
-            otrzymanych obrażeń prawie bym niezauważał. "Gothic to nie tylko
-            bicie potworów!" - Ktoś krzyczy. Jasne, ale nie da się ukryć, że
-            jest to podstawowy element Gothica, jak i większości gier typu RPG w
-            ogóle. Jeśli nie sprawiają ci frajdy dobre RPG-i to, co tu u diabła
-            robisz? Oczywiście ludzie są różni i nie każdy lubi godzinami farmić
-            poziom i statystyki, żeby wkońcu poczuć tę satysfakcję z siły swojej
-            postaci. Istnieje grupa osób, które chcą sobie zagrać dla samej
-            historii, poznać fabułę. Z myślą o takich osobach przygotowana
-            zostanie wersja "story" Lobosa, gdzie poziom trudności można będzie
-            porównać do Gothic 1. Poziom trudności zadań i zagadek pozostanie
-            ten sam. To już tylko czysty test na inteligencje.
+            zagrać w coś łatwiejszego? Może Gothic 1 na marvinie, Quake 3 Arena
+            z botami na łatwym? Albo grzybobranie w Zielonym Gaju? Osobiście gra
+            szybko by mnie znudziła, gdybym z łatwością rozwalał każdego
+            przeciwnika, nieotrzymując przy tym wiele obrażeń. "Gothic to nie
+            tylko grindowanie i bicie potworów!" - Ktoś krzyczy. Jasne, ale nie
+            da się ukryć, że jest to podstawowy element Gothica, jak i
+            większości gier typu RPG w ogóle. Jeśli nie sprawiają ci frajdy
+            dobre RPG-i to, co tu u diabła robisz? Oczywiście ludzie są różni i
+            nie każdy lubi godzinami farmić poziom i statystyki, żeby wkońcu
+            poczuć tę satysfakcję z siły swojej postaci. Istnieje grupa osób,
+            które chcą sobie zagrać dla samej historii, poznać fabułę. Z myślą o
+            takich osobach przygotowana zostanie wersja "story" Lobosa, gdzie
+            poziom trudności można będzie porównać do Gothic 1. Poziom trudności
+            zadań i zagadek pozostanie ten sam.
             <h1>
-              Nie liczcie tylko na dobry balans. W końcu zbalansowana wersja
-              moda jest dla was za trudna.
+              Jeśli jesteś jedną z wyżej wymienionych osób... Nie licz tylko na
+              dobry balans. W końcu zbalansowana wersja moda jest dla ciebie za
+              trudna.
             </h1>
           </article>
         </div>

@@ -5,9 +5,10 @@ import Header from "./components/Header";
 import Installation from "./components/Installation";
 import Footer from "./components/Footer";
 import Compedium from "./components/Compedium";
-import Noobguide from "./components/Noobguide";
-import Lobosguide from "./components/Lobosguide";
-import Changelog from "./components/Changelog";
+import Noobguide from "./components/CompediumPages/Noobguide";
+import Lobosguide from "./components/CompediumPages/Lobosguide";
+import Changelog from "./components/CompediumPages/Changelog";
+import Version from "./components/CompediumPages/LobosGuidePages/Version";
 
 function App() {
   return (
@@ -19,8 +20,12 @@ function App() {
           <Route path="/Installation" element={<Installation />} />
           <Route path="/Compedium" element={<Compedium />} />
           <Route path="/Compedium/Noobguide" element={<Noobguide />} />
-          <Route path="/Compedium/lobosguide" element={<Lobosguide />} />
-          <Route path="/Compedium/changelog" element={<Changelog />} />
+          <Route path="/Compedium/Lobosguide" element={<Lobosguide />} />
+          <Route path="/Compedium/Changelog" element={<Changelog />} />
+          <Route
+            path="/Compedium/Compedium/Lobosguide/Version"
+            element={<Version />}
+          />
         </Routes>
 
         <Footer />

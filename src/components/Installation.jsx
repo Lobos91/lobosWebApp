@@ -7,9 +7,9 @@ const Installation = () => {
   const { t } = useTranslation("");
   return (
     <div className="flex ">
-      <div className="w-2/3 pr-4 pt-28 ">
+      <div className="w-2/3 pr-4 pt-28 pl-20">
         <div className="pl-10 text-white space-y-2 space-x-2 pb-12 max-w-3xl">
-          <h1 className=" text-2xl pb-4 text-orange-400">
+          <h1 className=" text-2xl pb-4 pl-2 text-orange-400">
             {t("installation.header")}
           </h1>
           <h1>1. Zainstaluj czystego Gothic 2 z dodatkiem Noc Kruka.</h1>
@@ -108,7 +108,7 @@ const Installation = () => {
           src={piorun}
           className="z-0 animate-pulse fixed mt-16 "
           alt="Galos"
-          style={{ height: 900 }}
+          style={{ height: 700 }}
         />
       </div>
     </div>

@@ -59,3 +59,7 @@ body {
   -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
 }
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgb(253, 236, 43);
+}
