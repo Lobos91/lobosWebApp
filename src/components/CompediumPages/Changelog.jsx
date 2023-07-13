@@ -1,9 +1,8 @@
 import React from "react";
-import galos from "../../assets/galos.png";
 import { useState } from "react";
 
 const Changelog = () => {
-  const [allChanges, setAllChanges] = useState(true);
+  const [allChanges, setAllChanges] = useState(false);
 
   return (
     <div className="pt-28  pb-24 text-white">
@@ -33,7 +32,7 @@ const Changelog = () => {
             </li>
             <li>Dodana została magia i możliwość gry pod magię</li>
             <li>Możliwość skalowania obrażeń zaklęć z maną</li>
-            <li>Trzy poziomy trudności.</li>
+            <li>Trzy poziomy trudności</li>
             <li>
               Nowa ścieżka rozwoju legionisty-maga wraz z nowym setem pancerzy
               przeznaczonym wyłącznie dla nich
@@ -273,14 +272,6 @@ const Changelog = () => {
               </li>
             </ul>
           ) : null}
-        </div>
-        <div className="w-1/3">
-          <img
-            src={galos}
-            className="animate-pulse fixed -mt-16"
-            alt="Galos"
-            style={{ height: 790 }}
-          />
         </div>
       </article>
     </div>
