@@ -7,9 +7,8 @@ const Compedium = () => {
   return (
     <div className="pt-28  text-white text-center">
       <h1 className="text-orange-600 text-4xl pb-4">Kompedium wiedzy</h1>
-      <h1 className="text-2xl italic underline underline-offset-6 pb-20">
-        Najważniejsze informacje na temat modyfikacji
-      </h1>
+      <hr className="styledHr mb-8" />
+
       <div className="flex justify-center">
         <article className="w ">
           <div className="flex flex-col space-y-4 text-xl text-shadow">
@@ -25,7 +24,7 @@ const Compedium = () => {
               onClick={() => navigate("/Compedium/Level")}
             >
               <img src={arrow} className="w-7 h-7 mr-2" alt="Arrow" />
-              Specyfikacja poziomu trudności w wersji Definitive Edition
+              Specyfikacja poziomu trudności Definitive Edition
             </button>
 
             <button
@@ -40,14 +39,14 @@ const Compedium = () => {
               onClick={() => navigate("/Compedium/CommonInfo")}
             >
               <img src={arrow} className="w-7 h-7 mr-2" alt="Arrow" />
-              Ogólne informacje na temat rozgrywki
+              Techniczne informacje na temat modyfikacji
             </button>
             <button
               className="hover:text-orange-400 flex items-center"
-              onClick={() => navigate("/Compedium/Classes")}
+              onClick={() => navigate("/Compedium/Guide")}
             >
               <img src={arrow} className="w-7 h-7 mr-2" alt="Arrow" />
-              Ekonomia, czyli poradnik o tym jak mieć dużo złota
+              Poradnia Lobosu
             </button>
 
             <button

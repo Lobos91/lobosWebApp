@@ -4,7 +4,7 @@ const Version = () => {
   return (
     <div className="pt-28 text-white text-center">
       <h1 className="text-orange-500 text-3xl">
-        Czym się różni zwykły Lobos od Ultra+
+        Czym się różni zwykły Lobos od Ultra+?
       </h1>
       <hr className="styledHr mt-4 my-4" />
       <div className="flex justify-center px-60">
@@ -73,6 +73,12 @@ const Version = () => {
             <span className="text-red-500">UWAGA: </span>Na wersji Ultra+
             cieniostwory i demoniczne rozpruwacze mają te same statystyki co na
             podstawowej wersji. Jest to niedopatrzenie.
+          </h1>
+          <br />
+          <h1>
+            <span className="text-orange-500">INFO: </span>Gra ścieżką maga jest
+            możliwa jedynie na wersji Definivite Edition. W Lobos i Lobos Ultra+
+            możemy grać jedynie pod zręczność i siłę.
           </h1>
         </div>
       </div>

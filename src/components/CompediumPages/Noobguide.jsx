@@ -138,14 +138,7 @@ const Noobguide = () => {
             niewystępuje dlatego ważne jest, by zbierać cenne przedmioty, broń i
             ekwipunek po pokonanych przeciwnikach, a najlepiej zbierać wszystko.
             Od przybytku jeszcze głowa niebolała, a znalezione przedmioty często
-            mogą się przydać w najmniej oczekiwanym momencie. W moim modzie
-            poświęciłem zagadnieniu ekonomi szczególne miejsce. Więcej o tym w{" "}
-            <span
-              className="cursor-pointer text-red-500 hover:animate-pulse"
-              onClick={() => navigation("/compedium/Lobosguide")}
-            >
-              Poradniku Lobosu.
-            </span>
+            mogą się przydać w najmniej oczekiwanym momencie.
           </article>
           <hr className="styledHr mt-4 mb-2" />
           <article>

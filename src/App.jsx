@@ -10,6 +10,7 @@ import Changelog from "./components/CompediumPages/Changelog";
 import Version from "./components/CompediumPages/Version";
 import CommonInfo from "./components/CompediumPages/CommonInfo";
 import Level from "./components/CompediumPages/Level";
+import Guide from "./components/CompediumPages/Guide";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Compedium/Version" element={<Version />} />
           <Route path="/Compedium/Level" element={<Level />} />
           <Route path="/Compedium/CommonInfo" element={<CommonInfo />} />
+          <Route path="/Compedium/Guide" element={<Guide />} />
         </Routes>
 
         <Footer />

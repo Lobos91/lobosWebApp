@@ -1,8 +1,8 @@
 const Level = () => {
   return (
-    <div className="pt-28 text-white text-center">
+    <div className="pt-28 text-white text-center pb-20">
       <h1 className="text-orange-500 text-3xl">
-        Poziomy trudności w Lobos Definitive Edition
+        Specyfikacja poziomu trudności w Definitive Edition
       </h1>
       <hr className="styledHr mt-4 my-4" />
       <div className="flex justify-center px-60">
@@ -72,11 +72,26 @@ const Level = () => {
             postać)
           </h1>
           <br />
-          {/* <h1>
-            <span className="text-red-500">UWAGA: </span>Na wersji Ultra+
-            cieniostwory i demoniczne rozpruwacze mają te same statystyki co na
-            podstawowej wersji. Jest to niedopatrzenie.
-          </h1> */}
+          <div className="text-center">
+            <h1 className="text-green-500">STORY</h1>
+            <h1>
+              Poziom trudności przeznaczony dla osób bez doświadczenia w Gothicu
+              chcących zagrać dla samej fabuły.
+            </h1>
+            <br />
+            <h1 className="text-orange-400">BALANCED</h1>
+            <h1>
+              Właściwy i zbalansowany poziom moda, jaki polecam każdemu graczowi
+              Gothica, który lubi rozwijanie postaci i wie na czym ten rozwój
+              polega.
+            </h1>
+            <br />
+            <h1 className="text-red-800">ULTRA</h1>
+            <h1>
+              Poziom trudności przeznaczony dla osób z dużym doświadczeniem w
+              Gothicu, lubiących wyzwania i męczarnie z potworami.
+            </h1>
+          </div>
         </div>
       </div>
     </div>

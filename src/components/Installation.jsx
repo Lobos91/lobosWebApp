@@ -86,7 +86,8 @@ const Installation = () => {
           </h1>
           <h1 className="pl-4 ">
             Dla przykładu pliki z folderu System wklej do Gothic2/System. Pliki
-            z folderu modvdf wklej do Gothic2/Data/modvdf itd.
+            z folderu modvdf wklej do Gothic2/Data/modvdf. Postępuj analogicznie
+            z pozostałymi plikami.
           </h1>
           <h1>8. Odpalaj grę używajac GothicStarter.exe</h1>
           <h1 className=" text-xl pt-4 text-orange-400">Uwagi</h1>
@@ -99,17 +100,12 @@ const Installation = () => {
           </h1>
           <h1>
             Jeśli używasz programu Spine to nie instaluj moda ręcznie. Używaj
-            tylko programu spine do instalacji modów.
+            tylko programu Spine do instalacji modów.
           </h1>
         </div>
       </div>
       <div className="w-1/3">
-        <img
-          src={piorun}
-          className="z-0 animate-pulse fixed mt-16 "
-          alt="Galos"
-          style={{ height: 700 }}
-        />
+        <img src={piorun} className="z-0 animate-pulse  mt-16" alt="Piorun" />
       </div>
     </div>
   );
