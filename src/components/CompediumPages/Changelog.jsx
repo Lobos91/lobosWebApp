@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
+import piorun from "../../assets/piorun2.png";
 
 const Changelog = () => {
   const [allChanges, setAllChanges] = useState(false);
 
   return (
-    <div className="pt-28  pb-24 text-white">
+    <div className="pt-28  pb-24 text-white ">
       <h1 className="text-orange-600 text-3xl pb-4 text-center">
         Lista zmian w Definitive Edition
       </h1>
@@ -18,13 +19,13 @@ const Changelog = () => {
         </button>
         <button
           onClick={() => setAllChanges(true)}
-          className="bg-transparent hover:bg-blue-500 text-white font-semibold  py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          className="z-10 bg-transparent hover:bg-blue-500 text-white font-semibold  py-2 px-4 border border-blue-500 hover:border-transparent rounded"
         >
           Pokaż wszystkie zmiany
         </button>
       </div>
-      <article className="flex pl-20">
-        <div className="w-2/3">
+      <div className="flex">
+        <article className=" pl-20 w-3/5">
           <ul className="list-disc ">
             <li>
               Pełny polski dubbing do moda nagrany przeze mnie, graczy, widzów
@@ -272,8 +273,11 @@ const Changelog = () => {
               </li>
             </ul>
           ) : null}
-        </div>
-      </article>
+        </article>
+        <artice className="w-2/5 fixed right-0 top-2/4 transform -translate-y-1/2">
+          <img src={piorun} className="scale-75 mt-32 hidden lg:block" />
+        </artice>
+      </div>
     </div>
   );
 };

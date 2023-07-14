@@ -95,7 +95,7 @@ const Header = () => {
 
   return (
     <div className="navigation">
-      <nav className="z-10 flex fixed top-0 left-0 right-0 items-center justify-between flex-wrap bg-amber-600 hover:bg-red-600 transition-colors duration-500 p-4 ">
+      <nav className="z-20 flex fixed top-0 left-0 right-0 items-center justify-between flex-wrap bg-amber-600 hover:bg-red-600 transition-colors duration-500 p-4 ">
         <button
           className="flex items-center flex-shrink-0 text-white mr-6 "
           onClick={() => navigate("/")}

@@ -4,7 +4,7 @@ import flaga from "../../assets/flaga.png";
 const Economy = () => {
   return (
     <div className="flex justify-center pt-28 pb-20 text-white ">
-      <div className="w-1/5 fixed left-0 top-1/2 transform -translate-y-1/2">
+      <div className="w-1/5 fixed left-0 top-1/2 transform -translate-y-1/2 hidden md:block">
         <img src={flaga} />
       </div>
       <div className="text-center w-3/5 ">
@@ -200,7 +200,7 @@ const Economy = () => {
       </div>
 
       <div className="w-1/5 fixed right-0 top-1/2 transform -translate-y-1/2">
-        <img src={flaga} className="scale-x-[-1]" />
+        <img src={flaga} className="scale-x-[-1] hidden md:block" />
       </div>
     </div>
   );
