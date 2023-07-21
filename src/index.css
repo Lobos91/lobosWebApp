@@ -63,3 +63,43 @@ body {
 .text-shadow {
   text-shadow: 1px 1px 2px rgb(253, 236, 43);
 }
+
+.rolling-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rolling-list li {
+  animation: rollIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes rollIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.imageAnimation {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+
+#introAnimation {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

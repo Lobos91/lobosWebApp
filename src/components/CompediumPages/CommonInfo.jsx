@@ -1,11 +1,13 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const CommonInfo = () => {
+  const { t } = useTranslation("");
   return (
     <div className="flex justify-center pt-28 pb-20 text-white ">
       <div className="text-center ">
         <h1 className="text-orange-600 text-3xl pb-4">
-          Techniczne informacje na temat modyfikacji
+          {t("technicalinfo.title")}
         </h1>
         <hr className="styledHr mb-10" />
 

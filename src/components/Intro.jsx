@@ -8,6 +8,7 @@ const Intro = () => {
   return (
     <>
       <div
+        id="introAnimation"
         className="mt-16"
         style={{
           backgroundImage: `url(${introBG2})`,

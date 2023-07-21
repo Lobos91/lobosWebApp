@@ -2,13 +2,15 @@ import React from "react";
 import uriziel from "../../assets/urizliel.png";
 import kusza from "../../assets/kusza.png";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Noobguide = () => {
   const navigation = useNavigate();
+  const { t } = useTranslation("");
   return (
     <div className="flex justify-center pt-28 pb-20 text-white ">
       <div className="text-center ">
-        <h1 className="text-orange-600 text-3xl pb-4">Jak nie być noobem</h1>
+        <h1 className="text-orange-600 text-3xl pb-4">{t("noob.title")}</h1>
         <h1 className="text-xl italic underline underline-offset-4 pb-4">
           Krótki poradnik o tym, jak stać się bardziej PRO i nie lamić Gothica.
         </h1>

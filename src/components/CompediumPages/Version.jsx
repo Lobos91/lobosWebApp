@@ -1,17 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Version = () => {
+  const { t } = useTranslation("");
   return (
     <div className="pt-28 text-white text-center">
-      <h1 className="text-orange-500 text-3xl">
-        Czym się różni zwykły Lobos od Ultra+?
-      </h1>
+      <h1 className="text-orange-500 text-3xl">{t("lobosvsultra.title")}</h1>
       <hr className="styledHr mt-4 my-4" />
       <div className="flex justify-center px-60">
         <table class=" w-8/12 border-collapse border border-slate-500 ">
           <thead>
             <tr>
-              <th class="border border-slate-400 bg-slate-600 p-2">Zmiany</th>
+              <th class="border border-slate-400 bg-slate-600 p-2">
+                {t("lobosvsultra.changes")}
+              </th>
               <th class="border border-slate-400 bg-slate-600 p-2">Lobos</th>
               <th class="border border-slate-400 bg-slate-600 p-2">
                 Lobos Ultra+

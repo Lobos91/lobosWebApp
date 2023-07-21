@@ -1,14 +1,19 @@
 import React from "react";
 import flaga from "../../assets/flaga.png";
+import { useTranslation } from "react-i18next";
 
 const Economy = () => {
+  const { t } = useTranslation("");
   return (
     <div className="flex justify-center pt-28 pb-20 text-white ">
       <div className="w-1/5 fixed left-0 top-1/2 transform -translate-y-1/2 hidden md:block">
-        <img src={flaga} />
+        <img src={flaga} className="imageAnimation" />
       </div>
       <div className="text-center w-3/5 ">
-        <h1 className="text-orange-600 text-3xl pb-4">Poradnia Lobosu</h1>
+        <h1 className="text-orange-600 text-3xl pb-4">
+          {" "}
+          {t("lobosguide.title")}
+        </h1>
         <h1 className="text-xl italic underline underline-offset-4 pb-4">
           Najważniejsze informacje, które dramatycznie ułatwią ci rozgrywkę (Bez
           spoilerów fabularnych)
@@ -42,7 +47,7 @@ const Economy = () => {
             premię do statystyk można używać od razu.
           </h1>
           <br />
-          <h1 className="text-sm text-shadow text-blue-200">
+          <h1 className="text-sm text-shadow text-orange-200">
             Progi statystyk dla siły i zręczności. Mana ma zwiększone progi.
           </h1>
           <table class="border-collapse border border-slate-500 mx-auto">
@@ -55,7 +60,10 @@ const Economy = () => {
                   Rozdział 1
                 </th>
                 <th class="border border-slate-400 bg-slate-600 p-2">
-                  Rozdział 2
+                  Rozdział 2 (1/2)
+                </th>
+                <th class="border border-slate-400 bg-slate-600 p-2">
+                  Rozdział 2 (2/2)
                 </th>
                 <th class="border border-slate-400 bg-slate-600 p-2">
                   Rozdział 3
@@ -68,18 +76,21 @@ const Economy = () => {
                 <td class="border border-slate-700 p-2">Lobos</td>
                 <td class="border border-slate-700 p-2">90</td>
                 <td class="border border-slate-700 p-2">160</td>
+                <td class="border border-slate-700 p-2">350</td>
                 <td class="border border-slate-700 p-2">500</td>
               </tr>
               <tr>
                 <td class="border border-slate-700 p-2">Lobos Ultra+</td>
                 <td class="border border-slate-700 p-2">90</td>
                 <td class="border border-slate-700 p-2">160</td>
+                <td class="border border-slate-700 p-2">350</td>
                 <td class="border border-slate-700 p-2">500</td>
               </tr>
               <tr>
                 <td class="border border-slate-700 p-2">Definitive Edition</td>
                 <td class="border border-slate-700 p-2">100</td>
                 <td class="border border-slate-700 p-2">180</td>
+                <td class="border border-slate-700 p-2">350</td>
                 <td class="border border-slate-700 p-2">600</td>
               </tr>
             </tbody>
@@ -111,9 +122,17 @@ const Economy = () => {
             testowaniu różnych sposobów rozwoju postaci, to inwestuj tylko w
             jeden atrybut. Jeśli grasz pod siłę, inwestuj tylko w siłę, jeśli
             pod zręczność to idź tylko w zręczność. Wedle starego porzekadła "Co
-            jest do wszystkiego, to jest do niczego". Doświadczeni gracze mogą
-            spróbować swoich sił robiąc hybrydę i sprytnie manipulować rozwojem
-            siły i zręczności znając już mechanikę gry.
+            jest do wszystkiego, to jest do niczego". Jest to ważne nawet z
+            punktu widzenia samej konstrukcji modyfikacji, tego jak została
+            zaprojektowana. Jeśli nie osiągniemy pewnego progu naszego atrubutu,
+            nie będziemy mogli posunąć fabuły do przodu. Limit jaki trzeba
+            osiągnąć, żeby odblokować 2 rozdział to minimum 90 siły lub 90
+            zręczności i minimum 30% do walki dowolną bronią. Kolejny próg
+            pojawia się w późnym rozdziale 2 gry i jest nim minimum 160 punktów
+            wybranego atrybutu i 60% do walki dowolną bronią. Nic się nie stało
+            jeśli wydałeś 20 lub 30 Punktów Nauki w drugorzędny atrybut, ale
+            jeśli zbyt mocno zaczniesz rozwijać dwa z nich, istnieje ryzyko, że
+            zablokujesz sobie dalszą rozgrywkę.
           </h1>
         </article>
         <hr className="styledHr my-6" />
@@ -151,8 +170,8 @@ const Economy = () => {
         <article>
           <h1 className="text-lg text-orange-200">Ekonomia</h1>
           <h1>
-            Niewiedziałeś co robić z nadmiarem złota w Nocy Kruka? Tu też nie
-            będziesz wiedzieć. A to dlatego, że w Lobosie trzeba je wydawać
+            Niewiedziałeś co robić z nadmiarem złota w Nocy Kruka? W Lobosie też
+            nie będziesz wiedzieć. A to dlatego, że złoto trzeba będzie wydawać
             rozsądnie, chyba że zadbasz o kwestie zarobkowe. W innym wypadku
             twoja postać ciągle będzie miała puste kieszenie.
           </h1>
@@ -180,8 +199,8 @@ const Economy = () => {
           </h1>
           <h1>
             Jeśli zastosujesz się do tych rad to istnieje duża szansa, że złota
-            ci nie zabraknie i jeszcze wystarczy na wykupienie wszystkich
-            mikstur stale podnoszących statystyki.
+            ci nie zabraknie i śmiało wystarczy na wykupienie wszystkich mikstur
+            stale podnoszących statystyki.
           </h1>
         </article>
         <hr className="styledHr my-6" />
@@ -200,7 +219,10 @@ const Economy = () => {
       </div>
 
       <div className="w-1/5 fixed right-0 top-1/2 transform -translate-y-1/2">
-        <img src={flaga} className="scale-x-[-1] hidden md:block" />
+        <img
+          src={flaga}
+          className="scale-x-[-1] hidden md:block imageAnimation"
+        />
       </div>
     </div>
   );

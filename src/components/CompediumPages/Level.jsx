@@ -1,9 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const Level = () => {
+  const { t } = useTranslation("");
   return (
     <div className="pt-28 text-white text-center pb-20">
-      <h1 className="text-orange-500 text-3xl">
-        Specyfikacja poziomu trudności w Definitive Edition
-      </h1>
+      <h1 className="text-orange-500 text-3xl">{t("difficultylevel.title")}</h1>
       <hr className="styledHr mt-4 my-4" />
       <div className="flex justify-center px-60">
         <table class=" w-8/12 border-collapse border border-slate-500 ">

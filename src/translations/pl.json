@@ -24,5 +24,107 @@
     "guestbook": "Kompedium",
     "installation": "Instalacja",
     "download": "Pobieralnia"
+  },
+  "changelog": {
+    "important": {
+      "h1": "Pełny polski dubbing do moda nagrany przeze mnie, graczy, widzów oraz profesjonalnych aktorów.",
+      "h2": "Dodana została magia i możliwość gry pod magię.",
+      "h3": "Trzy poziomy trudności (Story, Balanced, Ultra).",
+      "h4": "Nowa ścieżka rozwoju legionisty-maga wraz z nowym setem pancerzy przeznaczonym wyłącznie dla nich.",
+      "h5": "Dodano 3 nowe umiejętności dla maga.",
+      "h6": "Możliwość skalowania obrażeń zaklęć z maną.",
+      "h7": "Nowe przedmioty (miecze, kostury, pancerze, rośliny, runy, książki, mikstury, przedmioty różne, voby).",
+      "h8": "Poszerzone lokacje.",
+      "h9": "Nowy ZEN (nowa mapa).",
+      "h10": "Nowi NPC i potwory.",
+      "h11": "W modzie pojawią się piraci.",
+      "h12": "Nowe wątki i dialogi.",
+      "h13": "Poprawione zakończenia moda.",
+      "h14": "Walki na arenie.",
+      "h15": "Czasowe wspomagacze zwiększające umiejętności walki, statystyki i ochronę.",
+      "h16": "Dodany został opcjonalny częściowy respawn potworów z 4 rozdziału w późnym rozdziale 3 gry.",
+      "h17": "Dodane zostały bossy, które dają lepszy łup niż ich zwykłe odpowiedniki potworów/NPC. Ponad to gracz otrzyma Punkty Nauki za każdego pokonanego bossa.",
+      "h18": "Mapa teleportacyjna do szybkiej podróży, jeśli gracz uprzednio odkrył daną lokację.",
+      "h19": "Od teraz za bicie żołnierzy będąc członikiem Legionu Lord Santos wymierza nam grzywnę, a jeśli gracz nadal będzie łamał kodeks Legionu spotka go kara skutkująca trwałą utratą punktów życia.",
+      "h20": "Możliwość modlitwy do Oriona na podobnej zasadzie, co w Gothic 2.",
+      "h21": "Przewaluowanie obrażeń i wymagań wszystkich dostępnych broni plus zbalansowanie magii w modzie.",
+      "h22": "Dodano intro oraz outro do moda.",
+      "h23": "Błąd ze strzelaniem i bieganiem NPC przez kolce w świątyni został naprawiony.",
+      "h24": "Dodanie reakcji przełożonych na wtargnięcie bohatera do krypty.",
+      "h25": "Dodano handlarzom wiecej strzał i bełtów.",
+      "h26": "Dodano możliwość nauki podstawowych trofeów w 1 rozdziale w przypadku, gdy zawaliliśmy polowanie.",
+      "h27": "Dodano możliwość nauki wyrywania rogów cieniostwora i oddawania ich do Prahla za złoto i exp.",
+      "h28": "Nowe menu statystyk i dziennika.",
+      "h30": "Poprawienie rutyn Jocke i protektora, które powodowały śmierć i znikanie tych postaci u niektórych graczy."
+    },
+
+    "common": {
+      "h1": "Możliwość wymiany starych monet na nowe unikatowe przedmioty.",
+      "h2": "Zmniejszono ilość potworów i ich odradzania się, co rozdział w niektórych miejscach.",
+      "h3": "Usunięto tytoń z możliwego do wylosowania łupu z ciężkich skórzanych paczek.",
+      "h4": "Dodano teleport pomiędzy doliną a grotą.",
+      "h5": "Dodano biżuterię dla maga analogicznie do wojownika.",
+      "h6": "Dodano pas dla maga.",
+      "h7": "Niektórzy NPC będą od teraz nieśmiertelni aż do 3 rozdziału.",
+      "h8": "Dodano możliwość skórowania demonicznych rozpruwaczy, cieniostworów, wargów i wilków.",
+      "h9": "Dodano możliwość tworzenia zup dających stałą premię do many analogicznie do zup pod inne klasy postaci.",
+      "h10": "Poprawiono pojawienie się klucza do Groty w przypadku, gdy gracz odrazu zabija Cesara bez rozmowy.",
+      "h11": "Poprawiono wymarsz z Balorem na pustyni. Od teraz nie można wejść do wioski razem z żołnierzami.",
+      "h12": "Więcej mrocznych plot twistów.",
+      "h14": "Nieznaczne osłabienie NPC w kopalni w 1 rozdziale, by ułatwić graczom walkę w początkowych etapach gry.",
+      "h15": "Dodano więcej przedmiotów do zdobycia.",
+      "h16": "Dodano możliwość ulepszenia najlepszych broni u Carlosa: Złodziej Dusz, Topór Boga Wojny, Łuk Mistrza Wojny, Rozcinacz Światów.",
+      "h17": "Ulepszenie broni skutkuje utratą premii do umięjętności posługiwania się bronią, ale ich obrażenia znacznie się zwiększają.",
+      "h18": "Niektóre rośliny i przedmioty spożywcze odnawiają inną ilość punktów życia i many. Piwa, wina gin odnawiają teraz więcej many.",
+      "h19": "Ciemne grzyby odnawiają teraz 10 punktów many zamiast 5 punktów życia.",
+      "h20": "Wzięto pod uwagę za słabe obrażenia od broni jednoręcznych pod zręczność w 3 rozdziale.",
+      "h21": "Wzięto pod uwagę za słabe obrażenia od kusz pod siłę w 3 rozdziale.",
+      "h22": "Poszerzono Biologowi serię zadań związanych z badaniami o jedną misję na elitarny poziom.",
+      "h23": "Poprawienie koloru czcionki, przez którą ciężko było nawigować w dzienniku zadań używając DirecX 11.",
+      "h24": "Poprawienie błędu z blokowaniem się Saimana w podeście w kopalni.",
+      "h25": "Poprawienie rutyn Santosa i Wascara gdy idziemy po Lupino do krypty.",
+      "h26": "Dialog z Lukanem nie jest już wymagany do kontynuowania gry.",
+      "h27": "Poprawiono triggerowanie się bandytów, Malika i Henrego w misji od nadzorcy Santosa.",
+      "h28": "Poprawiono wiszące w dzienniku zadania  „Posłaniec” w przypadku jego niewykonania po zostaniu żołnierzem.",
+      "h29": "Poprawiono błąd z zabijaniem żołnierzy przez Lorda Mordraga poprzez niewłaściwe działanie runy „Tchnienie śmierci”.",
+      "h30": "Dialog z adeptem pod bagnami nie jest już wymagany do kontynuowania gry.",
+      "h31": "Kopalnia na pustyni w pobliżu wioski, gdzie niebyło nic oprócz 3 bryłek siarki została bardziej ovobowana.",
+      "h32": "Usunięto bonus many w ogniocierniu. (Gracze go zjadali i niemieli czym tworzyć zupek na ochronę).",
+      "h33": "Dodano bonus +10 do walki bronią dwuręczną do Topora Boga Wojny.",
+      "h34": "Dodano do kupienia mikstury na manę u Biologa i Vito.",
+      "h35": "Od teraz po dołączeniu do Legionu można wybrać sobie broń u Hectora zależnie pod co gramy (2 z nich są unikatowe i nie da się ich zdobyć w inny sposób).",
+      "h36": "Od teraz po dołączeniu do Gwardii można wybrać u Gratusa rodzaj ekwipunku jaki chcemy otrzymywać. (Mag bojowy lub żołnierz) Wybór jest uzależniony od rozwoju naszej postaci.",
+      "h37": "Poprawiono błędne wyświetlanie statystyk pancerzy w oknie dialogowym u Gratusa i Fuada w zależności od poziomu trudności.",
+      "h38": "Najlepsza broń z każdej kategorii dostała efekt pfx (będzie się świecić).",
+      "h39": "Poprawiono wyświetlanie ilości ochrony w oknie statystyk powyżej 300.",
+      "h40": "Najlepsza broń i pancerz będzie do zdobycia nieco wcześniej niż w podstawowej wersji moda.",
+      "h41": "Dodano do gry więcej cieniostworów.",
+      "h42": "Od teraz w zadaniu z Louisem można oddać mu więcej książek.",
+      "h43": "Poprawiono dialog z Abrahamem, w przypadku gdy jego brat zginie.",
+      "h44": "Poprawiono bug ze znikaniem Balora przy bramie po zakończeniu pustynnej wyprawy."
+    },
+    "buttonCrucial": "Pokaż najważniejsze zmiany",
+    "buttonCommon": "Pokaż wszystkie zmiany",
+    "header": "Lista zmian w Definitive Edition"
+  },
+  "compedium": "Kompedium Wiedzy",
+  "lobosvsultra": {
+    "title": "Czym się różni zwykły Lobos od Ultra+?",
+    "changes": "Zmiany"
+  },
+  "difficultylevel": {
+    "title": "Specyfikacja poziomów trudności w Definitive Edition"
+  },
+  "changelogcompedium": {
+    "title": "Lista zmian w Definitive Edition"
+  },
+  "technicalinfo": {
+    "title": "Informacja techniczne na temat modyfikacji"
+  },
+  "lobosguide": {
+    "title": "Poradnia Lobosu"
+  },
+  "noob": {
+    "title": "Jak nie być noobem"
   }
 }

@@ -105,7 +105,11 @@ const Installation = () => {
         </div>
       </div>
       <div className="w-1/3">
-        <img src={piorun} className="z-0 animate-pulse  mt-16" alt="Piorun" />
+        <img
+          src={piorun}
+          className="z-0 animate-pulse imageAnimation mt-16"
+          alt="Piorun"
+        />
       </div>
     </div>
   );
