@@ -2,9 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 1045px) {
-  .navigation {
-    padding-bottom: 150px;
+@media (max-width: 1024px) {
+  .gothicloboslogo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .support-mobile {
+    margin-left: 192px;
+    margin-top: 88px;
+  }
+
+  .download-mobile {
+    margin-left: 168px;
+    margin-top: 248px;
   }
 }
 
@@ -102,4 +118,10 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.burger {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s, height 0.3s;
 }

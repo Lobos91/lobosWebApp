@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import gothic_icon from "../assets/gothic_icon.png";
 import paypal from "../assets/paypal.png";
 import patronite from "../assets/patronite.png";
@@ -10,9 +10,15 @@ import i18next from "i18next";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isDownloadOpen, setDownloadOpen] = useState(false);
+  const [isBurgerOpen, setBurgerOpen] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownSupportRef1 = useRef(null);
+  const dropdownSupportRef2 = useRef(null);
+
+  const dropdownDownloadRef1 = useRef(null);
+  const dropdownDownloadRef2 = useRef(null);
+
   const [isModalOpen, setModalOpen] = useState(false);
   const [moddb, setModdb] = useState("");
   const [googleDrive, setGoogleDrive] = useState("");
@@ -26,26 +32,12 @@ const Header = () => {
     { value: "en", text: "English", image: engLogo },
   ];
 
+  // Language change function //
   const mainHandleChange = (event) => {
     const selectedIndex = parseInt(event.target.value);
     setSelected(selectedIndex);
     const selectedLanguage = options[selectedIndex].value;
     i18next.changeLanguage(selectedLanguage);
-  };
-
-  const handleDropDown = () => {
-    setOpen(!isOpen);
-  };
-
-  const handleSupport = () => {
-    setSupportOpen(!supportOpen);
-  };
-
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setOpen(false);
-      setSupportOpen(false);
-    }
   };
 
   function handleLobos() {
@@ -86,18 +78,37 @@ const Header = () => {
     setTitle("Resource Manager");
   }
 
-  useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true);
-    return () => {
-      document.removeEventListener("click", handleClickOutside, true);
-    };
+  // Handle clicking outside to close dropdown lists (support, download)
+  const handleClickOutside = useCallback((event) => {
+    if (
+      (dropdownDownloadRef1.current &&
+        dropdownDownloadRef1.current.contains(event.target)) ||
+      (dropdownDownloadRef2.current &&
+        dropdownDownloadRef2.current.contains(event.target)) ||
+      (dropdownSupportRef1.current &&
+        dropdownSupportRef1.current.contains(event.target)) ||
+      (dropdownSupportRef2.current &&
+        dropdownSupportRef2.current.contains(event.target))
+    ) {
+      return;
+    }
+
+    setDownloadOpen(false);
+    setSupportOpen(false);
   }, []);
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [handleClickOutside]);
 
   return (
     <div className="navigation">
       <nav className="z-20 flex fixed top-0 left-0 right-0 items-center justify-between flex-wrap bg-amber-600 hover:bg-red-600 transition-colors duration-500 p-4 ">
         <button
-          className="flex items-center flex-shrink-0 text-white mr-6 "
+          className="flex items-center flex-shrink-0 text-white mr-6 gothicloboslogo"
           onClick={() => navigate("/")}
         >
           <img src={gothic_icon} style={{ height: 42, width: 42 }} />
@@ -106,15 +117,12 @@ const Header = () => {
           </span>
         </button>
 
-        <div
-          id="nav-menu"
-          className="w-full block flex-grow lg:flex lg:w-auto  "
-        >
+        <div className=" flex-grow flex lg:w-auto  ">
           <div className="text-base lg:flex-grow mt-4">
             <button
-              className=" text-center inline-flex flex-wrap items-center font-bold lg:mt-0 text-slate-900 hover:text-white mr-4 "
-              onClick={handleSupport}
-              ref={dropdownRef}
+              className=" text-center inline-flex flex-wrap items-center font-bold lg:mt-0 text-slate-900 hover:text-white mr-4 hideOnMobile"
+              onClick={() => setSupportOpen(!supportOpen)}
+              ref={dropdownSupportRef1}
             >
               <svg
                 className="w-6 h-6 mr-0.5"
@@ -149,28 +157,29 @@ const Header = () => {
             </button>
 
             <div
-              className={`z-10 fixed ${
+              className={`z-30 fixed support-mobile  ${
                 supportOpen ? "block" : "hidden"
-              } bg-white rounded-lg shadow w-40 dark:bg-gray-700  `}
+              } bg-gray-700  rounded-lg shadow w-40   `}
             >
-              <ul className="h-24 py-2 overflow-y-auto text-gray-700 dark:text-gray-200">
+              <ul className="h-24 py-2  text-white">
                 <li>
                   <a
                     href="https://www.paypal.com/donate/?hosted_button_id=TWQSSHKNVG62S"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="flex items-center px-4 py-2 hover:bg-gray-500 "
                   >
                     <img
                       className="w-6 h-6 mr-2 "
                       src={paypal}
-                      alt="Jese image"
+                      alt="paypal icon"
                     />
                     PayPal
                   </a>
                 </li>
+                <hr className=" w-40 border-1 border-gray-600 " />
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="flex items-center px-4 py-2 hover:bg-gray-500 "
                   >
                     <img
                       className="w-6 h-6 mr-2 rounded-full"
@@ -185,7 +194,7 @@ const Header = () => {
 
             <button
               onClick={() => navigate("/compedium")}
-              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4 font-bold"
+              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4 font-bold hideOnMobile"
             >
               <svg
                 className="w-6 h-6 mr-0.5"
@@ -206,7 +215,7 @@ const Header = () => {
 
             <button
               onClick={() => navigate("/installation")}
-              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4 font-bold"
+              className="text-center inline-flex flex-wrap items-centerlg:mt-0 text-slate-900 hover:text-white mr-4 font-bold hideOnMobile"
             >
               <svg
                 fill="none"
@@ -231,11 +240,88 @@ const Header = () => {
               {t("header.installation")}
             </button>
           </div>
+
+          {/* <------------------------>
+          MENU FOR MOBIL VIEW 
+          <------------------------> */}
+
+          <div className="flex ">
+            <button
+              onClick={() => setBurgerOpen(!isBurgerOpen)}
+              // ref={dropdownBurgerRef}
+              type="button"
+              className="flex items-center text-white text-xl md:hidden "
+            >
+              <svg
+                class="block h-6 w-6 fill-current"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          {isBurgerOpen && (
+            <ul className="z-20 absolute left-0 mt-14  bg-amber-500 md:hidden rounded-md ">
+              <hr className="absolute left-0 w-52 border-1 border-black" />
+              <li>
+                <button
+                  className="text-left  w-52 p-3 font-bold  hover:bg-orange-200 "
+                  onClick={() => navigate("/")}
+                >
+                  Strona główna
+                </button>
+              </li>
+              <hr className="absolute left-0 w-52 border-1 border-black " />
+              <li>
+                <button
+                  className="text-left  w-52 p-3 font-bold  hover:bg-orange-200 "
+                  onClick={() => setSupportOpen(!supportOpen)}
+                  ref={dropdownSupportRef2}
+                >
+                  {t("header.support")}
+                </button>
+              </li>
+              <hr className="absolute left-0 w-52 border-1 border-black " />
+              <li>
+                <button
+                  className="text-left w-52 p-3 font-bold hover:bg-orange-200"
+                  onClick={() => navigate("/compedium")}
+                >
+                  {t("header.guestbook")}
+                </button>
+              </li>
+              <hr className="absolute left-0 w-52 border-1 border-black " />
+              <li>
+                <button
+                  className="text-left w-52 p-3 font-bold hover:bg-orange-200"
+                  onClick={() => navigate("/installation")}
+                >
+                  {t("header.installation")}
+                </button>
+              </li>
+              <hr className="absolute left-0 w-52 border-1 border-black " />
+              <li>
+                <button
+                  className="text-left w-52 p-3 font-bold hover:bg-orange-200"
+                  onClick={() => setDownloadOpen(!isDownloadOpen)}
+                  ref={dropdownDownloadRef1}
+                >
+                  {t("header.download")}
+                </button>
+              </li>
+            </ul>
+          )}
+
+          {/* <------ END OF BURGER MENU  ------------------> */}
+
           <div className="mr-10">
             <button
-              onClick={handleDropDown}
+              className=" text-center inline-flex items-center text-sm font-bold px-5 py-3 leading-none  border-2 rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-0 hideOnMobile"
+              onClick={() => setDownloadOpen(!isDownloadOpen)}
               type="button"
-              className=" text-center inline-flex items-center text-sm font-bold px-5 py-3 leading-none  border-2 rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 lg:mt-0"
+              ref={dropdownDownloadRef2}
             >
               <svg
                 className="w-5 h-5 mr-2"
@@ -254,8 +340,8 @@ const Header = () => {
               {t("header.download")}
             </button>
             <div
-              className={`fixed mt-1 mr-2 bg-white rounded-lg  dark:bg-gray-700  shadow  w-60 ${
-                isOpen ? "block" : "hidden"
+              className={`fixed mt-1 mr-2 bg-gray-700 rounded-lg dark:bg-gray-700 shadow w-60 download-mobile ${
+                isDownloadOpen ? "block" : "hidden"
               }`}
             >
               <ul className="py-2 text-sm text-white ">
@@ -306,7 +392,8 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="flex w-32">
+
+          <div className="flex w-32 ml-auto">
             <img
               src={options[selected].image}
               className="w-13 h-10 pr-3 self-center"
@@ -318,7 +405,7 @@ const Header = () => {
               className="rounded-xl h-8 self-center border-amber-900 border-2"
             >
               {options.map((option, index) => (
-                <option key={option.value} value={index} className="">
+                <option key={option.value} value={index}>
                   {option.text}
                 </option>
               ))}
@@ -326,6 +413,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+
       {isModalOpen && (
         <Modal
           closeModal={setModalOpen}
