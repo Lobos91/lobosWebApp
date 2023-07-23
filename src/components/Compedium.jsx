@@ -7,13 +7,13 @@ const Compedium = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
   return (
-    <div className="pt-28  text-white ">
+    <div className="pt-28 pl-4 pr-4 text-white ">
       <h1 className="text-orange-600 text-4xl pb-4 text-center">
         {t("compedium")}
       </h1>
       <hr className="styledHr mb-8" />
 
-      <div className="flex justify-center">
+      <div id="introAnimation" className="flex justify-center">
         <article className="w ">
           <div className="flex flex-col space-y-4 text-xl text-shadow">
             <button

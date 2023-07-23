@@ -8,7 +8,7 @@ const Noobguide = () => {
   const navigation = useNavigate();
   const { t } = useTranslation("");
   return (
-    <div className="flex justify-center pt-28 pb-20 text-white ">
+    <div className="flex justify-center pt-28 pb-20 text-white pl-4 pr-4">
       <div className="text-center ">
         <h1 className="text-orange-600 text-3xl pb-4">{t("noob.title")}</h1>
         <h1 className="text-xl italic underline underline-offset-4 pb-4">

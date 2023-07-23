@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import gothic_icon from "../assets/gothic_icon.png";
 import paypal from "../assets/paypal.png";
-import patronite from "../assets/patronite.png";
+import patreon from "../assets/patreon.png";
 import polishLogo from "../assets/pl.png";
 import engLogo from "../assets/eng.png";
 import { Modal } from "./Modal";
@@ -18,6 +18,8 @@ const Header = () => {
 
   const dropdownDownloadRef1 = useRef(null);
   const dropdownDownloadRef2 = useRef(null);
+
+  const burgerRef = useRef(null);
 
   const [isModalOpen, setModalOpen] = useState(false);
   const [moddb, setModdb] = useState("");
@@ -88,13 +90,15 @@ const Header = () => {
       (dropdownSupportRef1.current &&
         dropdownSupportRef1.current.contains(event.target)) ||
       (dropdownSupportRef2.current &&
-        dropdownSupportRef2.current.contains(event.target))
+        dropdownSupportRef2.current.contains(event.target)) ||
+      (burgerRef.current && burgerRef.current.contains(event.target))
     ) {
       return;
     }
 
     setDownloadOpen(false);
     setSupportOpen(false);
+    setBurgerOpen(false);
   }, []);
 
   useEffect(() => {
@@ -108,11 +112,11 @@ const Header = () => {
     <div className="navigation">
       <nav className="z-20 flex fixed top-0 left-0 right-0 items-center justify-between flex-wrap bg-amber-600 hover:bg-red-600 transition-colors duration-500 p-4 ">
         <button
-          className="flex items-center flex-shrink-0 text-white mr-6 gothicloboslogo"
+          className="flex items-center flex-shrink-0 text-white mr-6 "
           onClick={() => navigate("/")}
         >
           <img src={gothic_icon} style={{ height: 42, width: 42 }} />
-          <span className="font-bold text-3xl tracking-tight text-amber-950 hover:text-black">
+          <span className="font-bold text-3xl tracking-tight text-amber-950 hover:text-black gothicloboslogo">
             othic II Lobos
           </span>
         </button>
@@ -157,7 +161,7 @@ const Header = () => {
             </button>
 
             <div
-              className={`z-30 fixed support-mobile  ${
+              className={`z-30 fixed support-mobile fadeinfast ${
                 supportOpen ? "block" : "hidden"
               } bg-gray-700  rounded-lg shadow w-40   `}
             >
@@ -166,6 +170,8 @@ const Header = () => {
                   <a
                     href="https://www.paypal.com/donate/?hosted_button_id=TWQSSHKNVG62S"
                     className="flex items-center px-4 py-2 hover:bg-gray-500 "
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       className="w-6 h-6 mr-2 "
@@ -178,15 +184,17 @@ const Header = () => {
                 <hr className=" w-40 border-1 border-gray-600 " />
                 <li>
                   <a
-                    href="#"
+                    href="https://www.patreon.com/Gothic2Lobos"
                     className="flex items-center px-4 py-2 hover:bg-gray-500 "
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       className="w-6 h-6 mr-2 rounded-full"
-                      src={patronite}
+                      src={patreon}
                       alt="Jese image"
                     />
-                    Patronite
+                    Patreon
                   </a>
                 </li>
               </ul>
@@ -245,15 +253,15 @@ const Header = () => {
           MENU FOR MOBIL VIEW 
           <------------------------> */}
 
-          <div className="flex ">
+          <div className="flex burger ">
             <button
               onClick={() => setBurgerOpen(!isBurgerOpen)}
-              // ref={dropdownBurgerRef}
+              ref={burgerRef}
               type="button"
-              className="flex items-center text-white text-xl md:hidden "
+              className=" items-center text-xl hover:scale-125 hover:text-white "
             >
               <svg
-                class="block h-6 w-6 fill-current"
+                class="block h-8 w-8 fill-current  "
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -263,16 +271,9 @@ const Header = () => {
             </button>
           </div>
           {isBurgerOpen && (
-            <ul className="z-20 absolute left-0 mt-14  bg-amber-500 md:hidden rounded-md ">
+            <ul className="z-20 absolute left-0 mt-14 burger bg-amber-500  rounded-md fadeinfast">
               <hr className="absolute left-0 w-52 border-1 border-black" />
-              <li>
-                <button
-                  className="text-left  w-52 p-3 font-bold  hover:bg-orange-200 "
-                  onClick={() => navigate("/")}
-                >
-                  Strona główna
-                </button>
-              </li>
+
               <hr className="absolute left-0 w-52 border-1 border-black " />
               <li>
                 <button
@@ -316,7 +317,7 @@ const Header = () => {
 
           {/* <------ END OF BURGER MENU  ------------------> */}
 
-          <div className="mr-10">
+          <div className="mr-10 ">
             <button
               className=" text-center inline-flex items-center text-sm font-bold px-5 py-3 leading-none  border-2 rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-0 hideOnMobile"
               onClick={() => setDownloadOpen(!isDownloadOpen)}
@@ -340,7 +341,7 @@ const Header = () => {
               {t("header.download")}
             </button>
             <div
-              className={`fixed mt-1 mr-2 bg-gray-700 rounded-lg dark:bg-gray-700 shadow w-60 download-mobile ${
+              className={`fixed mt-1 mr-2 bg-gray-700 rounded-lg dark:bg-gray-700 shadow w-60 download-mobile fadeinfast ${
                 isDownloadOpen ? "block" : "hidden"
               }`}
             >
