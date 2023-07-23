@@ -6,6 +6,14 @@
   .gothicloboslogo {
     display: none;
   }
+
+  .centertext-mobile {
+    width: auto;
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 837.5px) {

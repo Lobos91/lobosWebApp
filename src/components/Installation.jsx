@@ -6,11 +6,11 @@ import piorun from "../assets/piorun2.png";
 const Installation = () => {
   const { t } = useTranslation("");
   return (
-    <div className="flex ">
-      <div className="w-2/3 pr-4 pt-28 pl-20">
+    <div className="flex flex-col md:flex-row">
+      <div className="md:w-2/3  pt-28 ">
         <div
           id="introAnimation"
-          className="pl-10 text-white space-y-2 space-x-2 pb-12 max-w-3xl"
+          className="pl-4 pr-4 text-white space-y-2 space-x-2 pb-12 max-w-3xl md:mx-auto"
         >
           <h1 className=" text-2xl pb-4 pl-2 text-orange-400">
             {t("installation.header")}
@@ -19,7 +19,7 @@ const Installation = () => {
           <h1 className="pl-4 ">
             Upewnij się, że nazwa folderu z grą nie zawiera polskich znaków np.
             Gothic 2 Złota Edycja. Jeśli tak jest, poprostu zmień nazwę folderu
-            na Gothic2NK lub usuń "ł".
+            na Gothic2NK lub zamień „ł” na „l”.
           </h1>
           <h1>
             2. Pobierz{" "}
@@ -110,7 +110,7 @@ const Installation = () => {
       <div className="w-1/3">
         <img
           src={piorun}
-          className="z-0 animate-pulse imageAnimation mt-16"
+          className="z-0 animate-pulse imageAnimation mt-16 hideOnMobile"
           alt="Piorun"
         />
       </div>

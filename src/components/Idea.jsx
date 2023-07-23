@@ -10,7 +10,7 @@ const Idea = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="flex items-center justify-center flex-col pt-5 pl-96 pr-96 pb-7 text-center"
+        className="flex items-center justify-center flex-col pt-5 pl-96 pr-96 pb-7 text-center centertext-mobile"
       >
         <h1 className="text-orange-500 text-3xl pb-4">{t("idea.modidea")}</h1>
         <div className=" leading-9 text-white">
