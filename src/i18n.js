@@ -16,6 +16,7 @@ i18n
       //   // check the domain
       //   const host = window.location.host;
       //   return (host === 'production.ltd' ? '/static/app':'') + '/static/app/static/locales/{{lng}}/{{ns}}.json';
+      loadPath: "locales/translation/{{lng}}.json",
     },
     fallbackLng: "pl",
     debug: false,
