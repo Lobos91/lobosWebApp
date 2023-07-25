@@ -11,7 +11,7 @@ i18n
     lng: "pl",
     backend: {
       // loadPath: "src/translations/{{lng}}.json",
-      loadPath: `${window.location.pathname}src/translations/{{lng}}.json`,
+      // loadPath: `${window.location.pathname}src/translations/{{lng}}.json`,
       // loadPath: () => {
       //   // check the domain
       //   const host = window.location.host;
