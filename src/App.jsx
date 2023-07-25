@@ -1,5 +1,6 @@
 import { Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Installation from "./components/Installation";
@@ -15,7 +16,7 @@ import Guide from "./components/CompediumPages/Guide";
 function App() {
   return (
     <Suspense fallback={"Loading..."}>
-      <Router>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,7 +31,7 @@ function App() {
         </Routes>
 
         <Footer />
-      </Router>
+      </HashRouter>
     </Suspense>
   );
 }
