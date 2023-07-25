@@ -10,7 +10,7 @@ i18n
   .init({
     lng: "pl",
     backend: {
-      loadPath: `${process.env.PUBLIC_URL}/translations/{{lng}}.json`,
+      loadPath: `/${lobosWebApp}/translations/{{lng}}.json`,
     },
     fallbackLng: "pl",
     debug: false,
