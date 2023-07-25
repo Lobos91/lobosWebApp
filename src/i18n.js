@@ -10,13 +10,12 @@ i18n
   .init({
     lng: "pl",
     backend: {
-      // loadPath: "/translations/{{lng}}.json",
-      loadPath: "../src/translations/{{lng}}.json",
-
-      //   loadPath: () => {
-      //     // check the domain
-      //     const host = window.location.host;
-      //     return (host === 'production.ltd' ? '/static/app':'') + '/static/app/static/locales/{{lng}}/{{ns}}.json';
+      // loadPath: "src/translations/{{lng}}.json",
+      loadPath: "https://gothic2lobos.com/src/translations/{{lng}}.json",
+      // loadPath: () => {
+      //   // check the domain
+      //   const host = window.location.host;
+      //   return (host === 'production.ltd' ? '/static/app':'') + '/static/app/static/locales/{{lng}}/{{ns}}.json';
     },
     fallbackLng: "pl",
     debug: false,
