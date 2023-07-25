@@ -12,7 +12,7 @@ i18n
   .init({
     lng: "pl",
     backend: {
-      loadPath: `${domain}/translations/{{lng}}.json`,
+      loadPath: "{{lng}}.json",
     },
     fallbackLng: "pl",
     debug: false,
