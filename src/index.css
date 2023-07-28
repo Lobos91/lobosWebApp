@@ -6,6 +6,7 @@ body {
   /* min-width: auto; */
   background-color: #202020;
   /* color: white; */
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 1024px) {
