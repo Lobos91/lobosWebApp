@@ -12,7 +12,7 @@ i18n
     backend: {
       // loadPath: "src/translations/{{lng}}.json",
 
-      loadPath: "/lobosWebApp/locales/{{lng}}.json",
+      loadPath: "/gothic2lobos.com/locales/{{lng}}.json",
     },
     fallbackLng: "pl",
     debug: true,
