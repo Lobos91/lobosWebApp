@@ -6,10 +6,10 @@ const Economy = () => {
   const { t } = useTranslation("");
   return (
     <div className="flex justify-center pt-28 pb-20 text-white ">
-      <div className="w-1/5 fixed left-0 top-1/2 transform -translate-y-1/2 hidden md:block">
+      <div className="w-1/5 fixed left-0 top-1/2 transform -translate-y-1/2 hide-on-1024 ">
         <img src={flaga} className="imageAnimation" />
       </div>
-      <div className="text-center w-3/5 ">
+      <div className="text-center w-3/5 centertext-mobile ">
         <h1 className="text-orange-600 text-3xl pb-4">
           {" "}
           {t("lobosguide.title")}
@@ -50,22 +50,24 @@ const Economy = () => {
           <h1 className="text-sm text-shadow text-orange-200">
             Progi statystyk dla siły i zręczności. Mana ma zwiększone progi.
           </h1>
-          <table class="border-collapse border border-slate-500 mx-auto">
+        </article>
+        <article className="">
+          <table className="border-collapse border border-slate-500 mx-auto ">
             <thead>
               <tr>
-                <th class="border border-slate-400 bg-slate-600 p-2">
+                <th className="border border-slate-400 bg-slate-600 p-2">
                   Wersja moda
                 </th>
-                <th class="border border-slate-400 bg-slate-600 p-2">
+                <th className="border border-slate-400 bg-slate-600 p-2">
                   Rozdział 1
                 </th>
-                <th class="border border-slate-400 bg-slate-600 p-2">
+                <th className="border border-slate-400 bg-slate-600 p-2">
                   Rozdział 2 (1/2)
                 </th>
-                <th class="border border-slate-400 bg-slate-600 p-2">
+                <th className="border border-slate-400 bg-slate-600 p-2">
                   Rozdział 2 (2/2)
                 </th>
-                <th class="border border-slate-400 bg-slate-600 p-2">
+                <th className="border border-slate-400 bg-slate-600 p-2">
                   Rozdział 3
                 </th>
               </tr>
@@ -73,25 +75,27 @@ const Economy = () => {
 
             <tbody>
               <tr>
-                <td class="border border-slate-700 p-2">Lobos</td>
-                <td class="border border-slate-700 p-2">90</td>
-                <td class="border border-slate-700 p-2">160</td>
-                <td class="border border-slate-700 p-2">350</td>
-                <td class="border border-slate-700 p-2">500</td>
+                <td className="border border-slate-700 p-2">Lobos</td>
+                <td className="border border-slate-700 p-2">90</td>
+                <td className="border border-slate-700 p-2">160</td>
+                <td className="border border-slate-700 p-2">350</td>
+                <td className="border border-slate-700 p-2">500</td>
               </tr>
               <tr>
-                <td class="border border-slate-700 p-2">Lobos Ultra+</td>
-                <td class="border border-slate-700 p-2">90</td>
-                <td class="border border-slate-700 p-2">160</td>
-                <td class="border border-slate-700 p-2">350</td>
-                <td class="border border-slate-700 p-2">500</td>
+                <td className="border border-slate-700 p-2">Lobos Ultra+</td>
+                <td className="border border-slate-700 p-2">90</td>
+                <td className="border border-slate-700 p-2">160</td>
+                <td className="border border-slate-700 p-2">350</td>
+                <td className="border border-slate-700 p-2">500</td>
               </tr>
               <tr>
-                <td class="border border-slate-700 p-2">Definitive Edition</td>
-                <td class="border border-slate-700 p-2">100</td>
-                <td class="border border-slate-700 p-2">180</td>
-                <td class="border border-slate-700 p-2">350</td>
-                <td class="border border-slate-700 p-2">600</td>
+                <td className="border border-slate-700 p-2">
+                  Definitive Edition
+                </td>
+                <td className="border border-slate-700 p-2">100</td>
+                <td className="border border-slate-700 p-2">180</td>
+                <td className="border border-slate-700 p-2">350</td>
+                <td className="border border-slate-700 p-2">600</td>
               </tr>
             </tbody>
           </table>
@@ -221,7 +225,7 @@ const Economy = () => {
       <div className="w-1/5 fixed right-0 top-1/2 transform -translate-y-1/2">
         <img
           src={flaga}
-          className="scale-x-[-1] hidden md:block imageAnimation"
+          className="scale-x-[-1] hide-on-1024  imageAnimation"
         />
       </div>
     </div>

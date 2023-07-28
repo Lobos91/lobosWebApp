@@ -116,7 +116,7 @@ const Header = () => {
           onClick={() => navigate("/")}
         >
           <img src={gothic_icon} style={{ height: 42, width: 42 }} />
-          <span className="font-bold text-3xl tracking-tight text-amber-950 hover:text-black gothicloboslogo">
+          <span className="font-bold text-3xl tracking-tight text-amber-950 hover:text-black hide-on-1024 ">
             othic II Lobos
           </span>
         </button>
@@ -261,7 +261,7 @@ const Header = () => {
               className=" items-center text-xl hover:scale-125 hover:text-white "
             >
               <svg
-                class="block h-8 w-8 fill-current  "
+                className="block h-8 w-8 fill-current  "
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >

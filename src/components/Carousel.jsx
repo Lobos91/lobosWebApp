@@ -67,6 +67,8 @@ export default function Carousel() {
           src={featuredImages[currentIndex]}
           alt=""
           style={{ width: "100%" }}
+          loading="lazy"
+          className="fadeinfast"
         />
       </div>
 

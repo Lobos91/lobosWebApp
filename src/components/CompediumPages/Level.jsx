@@ -3,59 +3,67 @@ import { useTranslation } from "react-i18next";
 const Level = () => {
   const { t } = useTranslation("");
   return (
-    <div className="pt-28 text-white text-center pb-20">
+    <div className="pt-28 text-white text-center pb-20 ">
       <h1 className="text-orange-500 text-3xl">{t("difficultylevel.title")}</h1>
       <hr className="styledHr mt-4 my-4" />
-      <div className="flex justify-center px-60">
-        <table class=" w-8/12 border-collapse border border-slate-500 ">
+      <div className="flex justify-center px-60 ">
+        <table className=" w-8/12 border-collapse border border-slate-500 ">
           <thead>
             <tr>
-              <th class="border border-slate-400 bg-slate-600 p-2"></th>
-              <th class="border border-slate-400 bg-slate-600 p-2">Story</th>
-              <th class="border border-slate-400 bg-slate-600 p-2">Balanced</th>
-              <th class="border border-slate-400 bg-slate-600 p-2">Ultra</th>
+              <th className="border border-slate-400 bg-slate-600 p-2"></th>
+              <th className="border border-slate-400 bg-slate-600 p-2">
+                Story
+              </th>
+              <th className="border border-slate-400 bg-slate-600 p-2">
+                Balanced
+              </th>
+              <th className="border border-slate-400 bg-slate-600 p-2">
+                Ultra
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border border-slate-700 p-2">EXP</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">90%</td>
+              <td className="border border-slate-700 p-2">EXP</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">90%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">HP za poziom</td>
-              <td class="border border-slate-700 p-2">15</td>
-              <td class="border border-slate-700 p-2">10</td>
-              <td class="border border-slate-700 p-2">5</td>
+              <td className="border border-slate-700 p-2">HP za poziom</td>
+              <td className="border border-slate-700 p-2">15</td>
+              <td className="border border-slate-700 p-2">10</td>
+              <td className="border border-slate-700 p-2">5</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">Statystyki potworów</td>
-              <td class="border border-slate-700 p-2">30%</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">140%</td>
+              <td className="border border-slate-700 p-2">
+                Statystyki potworów
+              </td>
+              <td className="border border-slate-700 p-2">30%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">140%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">Statystyki NPC</td>
-              <td class="border border-slate-700 p-2">50%</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">140%</td>
+              <td className="border border-slate-700 p-2">Statystyki NPC</td>
+              <td className="border border-slate-700 p-2">50%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">140%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">
+              <td className="border border-slate-700 p-2">
                 Statystyki pancerzy NPC
               </td>
-              <td class="border border-slate-700 p-2">75%</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">130%</td>
+              <td className="border border-slate-700 p-2">75%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">130%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">
+              <td className="border border-slate-700 p-2">
                 Statystyki pancerzy PC
               </td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">50%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">50%</td>
             </tr>
           </tbody>
         </table>

@@ -8,52 +8,56 @@ const Version = () => {
       <h1 className="text-orange-500 text-3xl">{t("lobosvsultra.title")}</h1>
       <hr className="styledHr mt-4 my-4" />
       <div className="flex justify-center px-60">
-        <table class=" w-8/12 border-collapse border border-slate-500 ">
+        <table className=" w-8/12 border-collapse border border-slate-500 ">
           <thead>
             <tr>
-              <th class="border border-slate-400 bg-slate-600 p-2">
+              <th className="border border-slate-400 bg-slate-600 p-2">
                 {t("lobosvsultra.changes")}
               </th>
-              <th class="border border-slate-400 bg-slate-600 p-2">Lobos</th>
-              <th class="border border-slate-400 bg-slate-600 p-2">
+              <th className="border border-slate-400 bg-slate-600 p-2">
+                Lobos
+              </th>
+              <th className="border border-slate-400 bg-slate-600 p-2">
                 Lobos Ultra+
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border border-slate-700 p-2">EXP</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">90%</td>
+              <td className="border border-slate-700 p-2">EXP</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">90%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">HP za poziom</td>
-              <td class="border border-slate-700 p-2">12</td>
-              <td class="border border-slate-700 p-2">3</td>
+              <td className="border border-slate-700 p-2">HP za poziom</td>
+              <td className="border border-slate-700 p-2">12</td>
+              <td className="border border-slate-700 p-2">3</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">Statystyki potworów</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">od 140% do 200%</td>
+              <td className="border border-slate-700 p-2">
+                Statystyki potworów
+              </td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">od 140% do 200%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">Statystyki NPC</td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">od 130% do 140%</td>
+              <td className="border border-slate-700 p-2">Statystyki NPC</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">od 130% do 140%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">
+              <td className="border border-slate-700 p-2">
                 Statystyki pancerzy NPC
               </td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">od 15% do 40%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">od 15% do 40%</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 p-2">
+              <td className="border border-slate-700 p-2">
                 Statystyki pancerzy PC
               </td>
-              <td class="border border-slate-700 p-2">100%</td>
-              <td class="border border-slate-700 p-2">od -20% do -60%</td>
+              <td className="border border-slate-700 p-2">100%</td>
+              <td className="border border-slate-700 p-2">od -20% do -60%</td>
             </tr>
           </tbody>
         </table>

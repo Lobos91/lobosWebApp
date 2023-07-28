@@ -22,10 +22,10 @@ const Changelog = () => {
         {t("changelog.header")}
       </h1>
 
-      <div className="flex justify-center pb-6 space-x-10">
+      <div className="flex justify-center pb-6 p-4 space-x-10">
         <button
           onClick={() => setAllChanges(false)}
-          className="bg-transparent hover:bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 hover:border-transparent rounded"
+          className=" bg-transparent hover:bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 hover:border-transparent rounded"
         >
           {t("changelog.buttonCrucial")}
         </button>
@@ -36,8 +36,8 @@ const Changelog = () => {
           {t("changelog.buttonCommon")}
         </button>
       </div>
-      <div className="flex">
-        <article className=" pl-20 w-3/5">
+      <div className="flex ">
+        <article className=" pl-20 w-3/5 centertext-mobile ">
           <ul className="rolling-list">
             {crucialChanges.map((zdanie) => (
               <li className="list-disc">{zdanie[1]}</li>

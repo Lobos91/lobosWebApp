@@ -23,7 +23,7 @@ i18n
     ns: ["common"],
 
     fallbackLng: "pl",
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false,
     },
