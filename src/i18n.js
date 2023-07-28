@@ -20,6 +20,7 @@ i18n
         common: common_en,
       },
     },
+    ns: ["common"],
     // backend: {
     //   // loadPath: "src/translations/{{lng}}.json",
 

@@ -25,7 +25,7 @@ const Header = () => {
   const [moddb, setModdb] = useState("");
   const [googleDrive, setGoogleDrive] = useState("");
   const [title, setTitle] = useState("");
-  const { t } = useTranslation();
+  const { t } = useTranslation(["common"]);
   const [selected, setSelected] = useState(0);
   const navigate = useNavigate();
 
