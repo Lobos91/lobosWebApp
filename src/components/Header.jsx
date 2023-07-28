@@ -30,8 +30,8 @@ const Header = () => {
   const navigate = useNavigate();
 
   const options = [
-    { value: "common", text: "Polski", image: polishLogo },
-    { value: "common", text: "English", image: engLogo },
+    { value: "pl", text: "Polski", image: polishLogo },
+    { value: "en", text: "English", image: engLogo },
   ];
 
   // Language change function //
