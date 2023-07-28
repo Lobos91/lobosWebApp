@@ -6,7 +6,9 @@ body {
   /* min-width: auto; */
   background-color: #202020;
   /* color: white; */
-  font-family: "Century Gothic", fantasy, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Century Gothic";
+  font-family: Verdana;
+  font-family: Calibri;
 }
 
 @media (max-width: 1024px) {
