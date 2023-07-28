@@ -19,7 +19,7 @@ i18n
       loadPath: `${window.location.pathname}locales/{{lng}}.json`,
     },
     fallbackLng: "pl",
-    debug: false,
+    debug: true,
     interpolation: {
       escapeValue: false,
     },
