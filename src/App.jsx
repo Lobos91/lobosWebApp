@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { createBrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Installation from "./components/Installation";
@@ -15,22 +15,22 @@ import Guide from "./components/CompediumPages/Guide";
 function App() {
   return (
     <Suspense fallback={"Loading..."}>
-      {/* <Router> */}
-      <Header />
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Installation" element={<Installation />} />
-        <Route path="/Compedium" element={<Compedium />} />
-        <Route path="/Compedium/Noobguide" element={<Noobguide />} />
-        <Route path="/Compedium/Changelog" element={<Changelog />} />
-        <Route path="/Compedium/Version" element={<Version />} />
-        <Route path="/Compedium/Level" element={<Level />} />
-        <Route path="/Compedium/CommonInfo" element={<CommonInfo />} />
-        <Route path="/Compedium/Guide" element={<Guide />} />
-      </Routes> */}
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Installation" element={<Installation />} />
+          <Route path="/Compedium" element={<Compedium />} />
+          <Route path="/Compedium/Noobguide" element={<Noobguide />} />
+          <Route path="/Compedium/Changelog" element={<Changelog />} />
+          <Route path="/Compedium/Version" element={<Version />} />
+          <Route path="/Compedium/Level" element={<Level />} />
+          <Route path="/Compedium/CommonInfo" element={<CommonInfo />} />
+          <Route path="/Compedium/Guide" element={<Guide />} />
+        </Routes>
 
-      <Footer />
-      {/* </Router> */}
+        <Footer />
+      </Router>
     </Suspense>
   );
 }
