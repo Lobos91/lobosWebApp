@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  /* min-width: auto; */
+  background-color: #202020;
+  /* color: white; */
+  font-family: "Century Gothic", fantasy, Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media (max-width: 1024px) {
   .gothicloboslogo {
     display: none;
@@ -36,13 +43,6 @@
   .burger {
     display: none;
   }
-}
-
-body {
-  /* min-width: auto; */
-  background-color: #202020;
-  /* color: white; */
-  font-family: "Century Gothic";
 }
 
 .styledHr {

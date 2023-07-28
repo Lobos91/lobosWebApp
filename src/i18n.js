@@ -21,11 +21,7 @@ i18n
       },
     },
     ns: ["common"],
-    // backend: {
-    //   // loadPath: "src/translations/{{lng}}.json",
 
-    //   loadPath: "/gothic2lobos.com/locales/{{lng}}.json",
-    // },
     fallbackLng: "pl",
     debug: true,
     interpolation: {
