@@ -11,12 +11,8 @@ i18n
     lng: "pl",
     backend: {
       // loadPath: "src/translations/{{lng}}.json",
-      // loadPath: `${window.location.pathname}src/translations/{{lng}}.json`,
-      // loadPath: () => {
-      //   // check the domain
-      //   const host = window.location.host;
-      //   return (host === 'production.ltd' ? '/static/app':'') + '/static/app/static/locales/{{lng}}/{{ns}}.json';
-      loadPath: `${window.location.pathname}locales/{{lng}}.json`,
+
+      loadPath: "/lobosWebApp/locales/{{lng}}.json",
     },
     fallbackLng: "pl",
     debug: true,
