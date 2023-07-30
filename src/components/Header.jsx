@@ -29,6 +29,7 @@ const Header = () => {
   const [selected, setSelected] = useState(0);
   const navigate = useNavigate();
 
+  // array with language choices. 'pl' must be always first - index 0
   const options = [
     { value: "pl", text: "Polski", image: polishLogo },
     { value: "en", text: "English", image: engLogo },
@@ -36,8 +37,8 @@ const Header = () => {
 
   // Language change function //
   const mainHandleChange = (event) => {
-    const selectedIndex = parseInt(event.target.value);
-    setSelected(selectedIndex);
+    const selectedIndex = parseInt(event.target.value); // selected index of <select> tag
+    setSelected(selectedIndex); // assigning a int value to useState
     const selectedLanguage = options[selectedIndex].value;
     i18next.changeLanguage(selectedLanguage);
   };

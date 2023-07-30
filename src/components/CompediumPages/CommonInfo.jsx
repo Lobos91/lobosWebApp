@@ -5,7 +5,7 @@ const CommonInfo = () => {
   const { t } = useTranslation("");
   return (
     <div className="flex justify-center pt-28 pb-20 text-white ">
-      <div className="text-center ">
+      <div className="text-center centertext-mobile">
         <h1 className="text-orange-600 text-3xl pb-4">
           {t("technicalinfo.title")}
         </h1>
@@ -53,7 +53,7 @@ const CommonInfo = () => {
           </h1>
           <h1 className="text-red-600">
             Istnieje plugin uniona który zmienia to skalowanie, ale nie powinien
-            być używany w moim modzie ponieważ mocno narusza balans i za bardzo
+            być używany w Lobosie ponieważ mocno narusza balans i za bardzo
             ułatwia grę. Jest zatem traktowany jako oszustwo.
           </h1>
           <h1>
