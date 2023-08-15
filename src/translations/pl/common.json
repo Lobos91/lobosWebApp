@@ -55,7 +55,8 @@
       "h26": "Dodano możliwość nauki podstawowych trofeów w 1 rozdziale w przypadku, gdy zawaliliśmy polowanie.",
       "h27": "Dodano możliwość nauki wyrywania rogów cieniostwora i oddawania ich do Prahla za złoto i exp.",
       "h28": "Nowe menu statystyk i dziennika.",
-      "h30": "Poprawienie rutyn Jocke i protektora, które powodowały śmierć i znikanie tych postaci u niektórych graczy."
+      "h30": "Poprawienie rutyn Jocke i protektora, które powodowały śmierć i znikanie tych postaci u niektórych graczy.",
+      "h31": "Przebalansowanie zasięgu broni i dodanie informacji w opisie broni."
     },
 
     "common": {
@@ -101,7 +102,8 @@
       "h41": "Dodano do gry więcej cieniostworów.",
       "h42": "Od teraz w zadaniu z Louisem można oddać mu więcej książek.",
       "h43": "Poprawiono dialog z Abrahamem, w przypadku gdy jego brat zginie.",
-      "h44": "Poprawiono bug ze znikaniem Balora przy bramie po zakończeniu pustynnej wyprawy."
+      "h44": "Poprawiono bug ze znikaniem Balora przy bramie po zakończeniu pustynnej wyprawy.",
+      "h45": "Czarne zjawy dostały efekty dźwiękowe."
     },
     "buttonCrucial": "Pokaż najważniejsze zmiany",
     "buttonCommon": "Pokaż wszystkie zmiany",
@@ -119,7 +121,7 @@
     "title": "Lista zmian w Definitive Edition"
   },
   "technicalinfo": {
-    "title": "Informacja techniczne na temat modyfikacji"
+    "title": "Informacje techniczne na temat modyfikacji"
   },
   "lobosguide": {
     "title": "Poradnia Lobosu"
