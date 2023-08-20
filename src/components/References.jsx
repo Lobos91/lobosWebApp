@@ -25,7 +25,7 @@ export const References = () => {
       </div>
       <div className="mt-10">
         <a
-          href="https://www.youtube.com/@sebaa30122"
+          href="https://www.youtube.com/channel/UCN04s-smMlIMIKlJLKA85IQ"
           target="_blank"
           rel="noopener noreferrer"
         >
