@@ -55,7 +55,8 @@
       "h26": "Added the ability to learn basic trophies in chapter 1 in case we failed the hunt.",
       "h27": "Added the ability to learn how to pluck shadowbeast horns and sell them to Prahl for gold and exp.",
       "h28": "New stats and log menu.",
-      "h30": "Correction of Jocke and Protector routines that were causing these characters to die and disappear for some players."
+      "h30": "Correction of Jocke and Protector routines that were causing these characters to die and disappear for some players.",
+      "h31": "Rebalanced weapon range and added information to weapon description."
     },
 
     "common": {
@@ -101,7 +102,11 @@
       "h41": "More shadowbeasts have been added to the game.",
       "h42": "You can now give Louis more books in the quest with him.",
       "h43": "Fixed dialogue with Abraham when his brother dies.",
-      "h44": "Fixed bug with Balor disappearing near the gate at the end of a desert expedition."
+      "h44": "Fixed bug with Balor disappearing near the gate at the end of a desert expedition.",
+      "h45": "The black phantoms got sound effects.",
+      "h46": "Information about work progress in \"Palisade\" quest has been added.",
+      "h47": "Information about meatbugs left to kill for Hiago quest has been added.",
+      "h48": "If Benito die during the quest for Tadeus, player will get information on the screen and will be still able to finish the quest."
     },
     "buttonCrucial": "Show crucial changes",
     "buttonCommon": "Show all changes",
