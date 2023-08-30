@@ -56,7 +56,9 @@
       "h27": "Dodano możliwość nauki wyrywania rogów cieniostwora i oddawania ich do Prahla za złoto i exp.",
       "h28": "Nowe menu statystyk i dziennika.",
       "h30": "Poprawienie rutyn Jocke i protektora, które powodowały śmierć i znikanie tych postaci u niektórych graczy.",
-      "h31": "Przebalansowanie zasięgu broni i dodanie informacji w opisie broni."
+      "h31": "Przebalansowanie zasięgu broni i dodanie informacji w opisie broni.",
+      "h32": "Poprawiono nazwy przedmiotów po podświetleniu, wszystkie zwoje i mikstury mają dokładną pełną nazwę zamiast 'Mikstura' czy 'Zwój'.",
+      "h33": "Zredefiniowany i ulepszony system kradzieży kieszonkowej."
     },
 
     "common": {
@@ -107,7 +109,9 @@
       "h46": "Dodano informacje na ekranie o postępie prac przy naprawie palisady.",
       "h47": "Dodano informacje na ekranie, gdy zabiliśmy wszystkie chrząszcze dla Hiago.",
       "h48": "Jeśli Benito zginie podczas misji dla Tadeusza, to gracz dostanie informacje na ekranie i nadal będzie mógł zakończyć zadanie.",
-      "h49": "Ujednolicono opisy przedmiotów, w tym mikstur."
+      "h49": "Ujednolicono opisy przedmiotów, w tym mikstur.",
+      "h50": "Od teraz Biolog w 5 zadaniu z serii zadań badawczych daję nam jedną stałą miksturę zależną od atrybutów gracza.",
+      "h51": "Do uwarzenia pełni życia i pełni many trzeba od teraz dwóch esencji zamiast trzech."
     },
     "buttonCrucial": "Pokaż najważniejsze zmiany",
     "buttonCommon": "Pokaż wszystkie zmiany",

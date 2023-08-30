@@ -56,7 +56,9 @@
       "h27": "Added the ability to learn how to pluck shadowbeast horns and sell them to Prahl for gold and exp.",
       "h28": "New stats and log menu.",
       "h30": "Correction of Jocke and Protector routines that were causing these characters to die and disappear for some players.",
-      "h31": "Rebalanced weapon range and added information to weapon description."
+      "h31": "Rebalanced weapon range and added information to weapon description.",
+      "h32": "Every item have from now detailed full name on hovering in game instead of 'Potion' or 'Scroll'.",
+      "h33": "Redefined and upgarded pickpocket system."
     },
 
     "common": {
@@ -107,7 +109,9 @@
       "h46": "Information about work progress in \"Palisade\" quest has been added.",
       "h47": "Information about meatbugs left to kill for Hiago quest has been added.",
       "h48": "If Benito die during the quest for Tadeus, player will get information on the screen and will be still able to finish the quest.",
-      "h49": "Unified item descriptions, including potions."
+      "h49": "Unified item descriptions, including potions.",
+      "h50": "From now on, Biologist in 5th quest of the research serie quests will give us 1 permanent potion depend of players attributes.",
+      "h51": "To brew pure mana and pure life energy potion, player from now will need 2 essences instead of three."
     },
     "buttonCrucial": "Show crucial changes",
     "buttonCommon": "Show all changes",
