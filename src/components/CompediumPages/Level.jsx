@@ -27,13 +27,13 @@ const Level = () => {
               <td className="border border-slate-700 p-2">EXP</td>
               <td className="border border-slate-700 p-2">100%</td>
               <td className="border border-slate-700 p-2">100%</td>
-              <td className="border border-slate-700 p-2">90%</td>
+              <td className="border border-slate-700 p-2">100%</td>
             </tr>
             <tr>
               <td className="border border-slate-700 p-2">HP za poziom</td>
               <td className="border border-slate-700 p-2">15</td>
               <td className="border border-slate-700 p-2">10</td>
-              <td className="border border-slate-700 p-2">5</td>
+              <td className="border border-slate-700 p-2">0</td>
             </tr>
             <tr>
               <td className="border border-slate-700 p-2">
