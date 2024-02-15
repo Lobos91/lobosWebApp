@@ -1,7 +1,7 @@
 import React from "react";
 import discord from "../assets/discord.png";
 import youtube from "../assets/yt.png";
-import bs from "../assets/bs.png";
+import sefaris from "../assets/sefaris.png";
 import letter from "./../assets/letter.png";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export const References = () => {
     <div className="flex justify-center space-x-12 p-12  h-80">
       <div className="mt-12">
         <a
-          href="https://discord.com/channels/480664394020159488/1011979124253937784"
+          href="https://discord.com/invite/kajma"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,15 +36,15 @@ export const References = () => {
           />
         </a>
       </div>
-      <div className="mt-10">
+      <div className="mt-14">
         <a
-          href="https://bractwospolszczenia.pl/showthread.php?tid=936"
+          href="https://www.sefaris.eu/lobos"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            className="w-20 h-13 rounded-full hover:scale-110"
-            src={bs}
+            className="w-24 h-16 rounded-full hover:scale-110"
+            src={sefaris}
             alt="YT image"
           />
         </a>
