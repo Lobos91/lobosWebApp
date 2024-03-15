@@ -2,7 +2,7 @@ import React from "react";
 import flaga from "../../assets/flaga.png";
 import { useTranslation } from "react-i18next";
 
-const Economy = () => {
+const News = () => {
   const { t } = useTranslation("");
   return (
     <div className="flex justify-center pt-28 pb-20 text-white ">
@@ -40,4 +40,4 @@ const Economy = () => {
   );
 };
 
-export default Economy;
+export default News;
