@@ -125,6 +125,9 @@
   "difficultylevel": {
     "title": "Specification of difficulity level in Definitive Edition"
   },
+  "news": {
+    "title": "News"
+  },
   "changelogcompedium": {
     "title": "Changelog in Definitive Edition"
   },

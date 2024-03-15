@@ -16,6 +16,13 @@ const Compedium = () => {
       <div id="introAnimation" className="flex justify-center">
         <article className="w ">
           <div className="flex flex-col space-y-4 text-xl text-shadow">
+          <button
+              className="hover:text-orange-400 flex items-center text-left"
+              onClick={() => navigate("/Compedium/News")}
+            >
+              <img src={arrow} className="w-7 h-7 mr-2" alt="Arrow" />
+              {t("news.title")}
+            </button>
             <button
               className="hover:text-orange-400 flex items-center text-left"
               onClick={() => navigate("/Compedium/Changelog")}
