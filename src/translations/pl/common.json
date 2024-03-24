@@ -53,12 +53,14 @@
       "h24": "Dodanie reakcji przełożonych na wtargnięcie bohatera do krypty.",
       "h25": "Dodano handlarzom wiecej strzał i bełtów.",
       "h26": "Dodano możliwość nauki podstawowych trofeów w 1 rozdziale w przypadku, gdy zawaliliśmy polowanie.",
-      "h27": "Dodano możliwość nauki wyrywania rogów cieniostwora i oddawania ich do Prahla za złoto i exp.",
+      "h27": "Dodano możliwość nauki wyrywania rogów cieniostwora i oddawania ich do Prahla za złoto i doświadczenie.",
       "h28": "Nowe menu statystyk i dziennika.",
       "h30": "Poprawienie rutyn Jocke i protektora, które powodowały śmierć i znikanie tych postaci u niektórych graczy.",
       "h31": "Przebalansowanie zasięgu broni i dodanie informacji w opisie broni.",
       "h32": "Poprawiono nazwy przedmiotów po podświetleniu, wszystkie zwoje i mikstury mają dokładną pełną nazwę zamiast 'Mikstura' czy 'Zwój'.",
-      "h33": "Zredefiniowany i ulepszony system kradzieży kieszonkowej."
+      "h33": "Zredefiniowany system kradzieży kieszonkowej.",
+      "h34": "Dodano możliwość noszenia bandany takiej jak mają niektórzy z nadzorców. Bandany występują w 5 kolorach.",
+      "h35": "Dodano kilka wydarzeń losowych."
     },
 
     "common": {

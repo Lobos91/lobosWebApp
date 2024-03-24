@@ -58,7 +58,9 @@
       "h30": "Correction of Jocke and Protector routines that were causing these characters to die and disappear for some players.",
       "h31": "Rebalanced weapon range and added information to weapon description.",
       "h32": "Every item have from now detailed full name on hovering in game instead of 'Potion' or 'Scroll'.",
-      "h33": "Redefined and upgarded pickpocket system."
+      "h33": "Redefined pickpocket system.",
+      "h34": "Added the ability to wear a bandana like some supervisors have. Bandanas come in 5 colors.",
+      "h35": "Several random events added."
     },
 
     "common": {

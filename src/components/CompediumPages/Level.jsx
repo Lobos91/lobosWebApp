@@ -12,13 +12,13 @@ const Level = () => {
             <tr>
               <th className="border border-slate-400 bg-slate-600 p-2"></th>
               <th className="border border-slate-400 bg-slate-600 p-2">
-                Story
+                <div className="text-green-500">STORY</div>
               </th>
               <th className="border border-slate-400 bg-slate-600 p-2">
-                Balanced
+              <div className="text-orange-400">BALANCED</div>
               </th>
               <th className="border border-slate-400 bg-slate-600 p-2">
-                Ultra
+              <div className="text-red-500">ULTRA</div> 
               </th>
             </tr>
           </thead>
@@ -65,6 +65,14 @@ const Level = () => {
               <td className="border border-slate-700 p-2">100%</td>
               <td className="border border-slate-700 p-2">50%</td>
             </tr>
+            <tr>
+              <td className="border border-slate-700 p-2">
+                Regeneracja snem (Od 2 rozdziału)
+              </td>
+              <td className="border border-slate-700 p-2">Tak</td>
+              <td className="border border-slate-700 p-2">Tak</td>
+              <td className="border border-slate-700 p-2">Nie</td>
+            </tr>
           </tbody>
         </table>
         <div className="w-4/12 pl-10 text-left ">
@@ -95,10 +103,12 @@ const Level = () => {
               polega.
             </h1>
             <br />
-            <h1 className="text-red-800">ULTRA</h1>
+            <h1 className="text-red-600">ULTRA</h1>
             <h1>
               Poziom trudności przeznaczony dla osób z dużym doświadczeniem w
-              Gothicu, lubiących wyzwania i męczarnie z potworami.
+              Gothicu, lubiących wyzwania i męczarnie z potworami. 
+              <h1>Oprócz zmian podanych w tabeli, poziom ten wyróżniają również: Wyższe ceny mikstur i darów z kapliczki, Lepszy styl walki NPC. </h1>
+
             </h1>
           </div>
         </div>
