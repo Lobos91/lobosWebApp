@@ -63,12 +63,12 @@ const Header = () => {
     setTitle("Gothic 2 Lobos Ultra+");
   }
 
-  // function handleLobosDefinitiveEdition() {
-  //   setModalOpen(true);
-  //   setGoogleDrive('https://drive.google.com/file/d/1vOKSHx_zaR4GHkUyvwZLgADwT4r5QloS/view?usp=drive_link');
-  //   setModdb('https://www.moddb.com/games/gothic-ii-the-night-of-the-raven/downloads/lobos-pena-wersja-instalacja-rczna');
-  //   setTitle('Gothic 2 Lobos Definitive Edition')
-  // }
+   function handleLobosDefinitiveEdition() {
+     setModalOpen(true);
+     setGoogleDrive('https://drive.google.com/drive/u/0/folders/1FmJpNLwXD6mlnvcdKDTHfcgqwUCh9Pap');
+     setModdb('#');
+     setTitle('Gothic 2 Lobos Definitive Edition')
+   }
 
   function handleResourceManager() {
     setModalOpen(true);
@@ -373,7 +373,13 @@ const Header = () => {
                 <hr className="w-60 border-1 border-gray-600" />
                 <li>
                   <button
-                    onClick={() => alert("Prace w toku!")}
+                    onClick={(e) => {
+                      handleLobosDefinitiveEdition();
+                      e.stopPropagation();
+                    }}
+
+
+                
                     className="w-60 block px-4 py-2 hover:bg-gray-500 "
                   >
                     G2NK Lobos Definitive Edition
