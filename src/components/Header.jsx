@@ -66,7 +66,7 @@ const Header = () => {
    function handleLobosDefinitiveEdition() {
      setModalOpen(true);
      setGoogleDrive('https://drive.google.com/drive/u/0/folders/1FmJpNLwXD6mlnvcdKDTHfcgqwUCh9Pap');
-     setModdb('#');
+     setModdb('https://www.moddb.com/members/lobos2/downloads');
      setTitle('Gothic 2 Lobos Definitive Edition')
    }
 
