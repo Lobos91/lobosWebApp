@@ -113,7 +113,7 @@ const Header = () => {
     <div className="navigation">
       <nav className="z-20 flex fixed top-0 left-0 right-0 items-center justify-between flex-wrap bg-amber-600 hover:bg-red-600 transition-colors duration-500 p-4 ">
         <button
-          className="flex items-center flex-shrink-0 text-white mr-6 "
+          className="flex items-center flex-shrink-0 text-white mr-6 mt-2"
           onClick={() => navigate("/")}
         >
           <img src={gothic_icon} style={{ height: 42, width: 42 }} />
@@ -125,7 +125,7 @@ const Header = () => {
         <div className=" flex-grow flex lg:w-auto  ">
           <div className="text-base lg:flex-grow mt-4">
             <button
-              className=" text-center inline-flex flex-wrap items-center font-bold lg:mt-0 text-slate-900 hover:text-white mr-4 hideOnMobile"
+              className=" text-center p-1 bg-green-500 rounded inline-flex flex-wrap items-center font-bold lg:mt-0 text-slate-100 mr-4 hideOnMobile hover:text-lg"
               onClick={() => setSupportOpen(!supportOpen)}
               ref={dropdownSupportRef1}
             >
@@ -160,11 +160,12 @@ const Header = () => {
                 ></path>
               </svg>
             </button>
-
+  
             <div
               className={`z-30 fixed support-mobile fadeinfast ${
                 supportOpen ? "block" : "hidden"
-              } bg-gray-700  rounded-lg shadow w-40   `}
+              } bg-gray-700  rounded-lg shadow w-40`}
+            
             >
               <ul className="h-24 py-2  text-white">
                 <li>
