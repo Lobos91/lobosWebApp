@@ -18,11 +18,60 @@ const News = () => {
 
         <hr className="styledHr my-6" />
    
-      
-     
+    <article>
+          <h1 className="text-lg text-orange-400">
+          Aktualizacja 1.2 (Finalna)
+          </h1>
+        <ul className="text-orange-200">
+        <li>
+        • Naprawiono zadanie z siarką dla mordraga którego przedwczesne wykonanie mogło zablokować rozgrywkę.
+            </li>
+            <li>
+            • Jozo, Lammar, Horacy i Miguel są od teraz nieśmiertelni dopóki ich rola fabularnie nie dobiegnie końca.
+            </li>
+            <li>
+            • Poprawiono skalowanie czasu. Od teraz umiejętność berserk powinna działać poprawnie
+            </li>
+            <li>
+            • Poprawienie warunku w krypcie, który powodował przedwczesną zmianę rutyny i dialog z Yao.
+            </li>
+            <li>
+            • Poprawiono nakładanie się efektu na Yao podczas walki który powodował jego ”padaczke” lub zamrożenie na poziomie Ultra.
+            </li>
+            <li>
+            • Naprawiono regenerację Yao podczas walki.
+            </li>
+            <li>
+            • Runy takie jak tchnienie śmierci, duchowe uderzenie i powtarzalny strzał konsumują od teraz mniej many.
+            </li>
+            <li>
+            • Naprawiono bug z kosturem Tajfun
+            </li>
+            <li>
+            • Od teraz Neptun posiada klucz do swojej komnaty.
+            </li>
+            <li>
+            • Logan daje teraz 3 dodatkowe mikstury many za wykonanie jego zadania.
+            </li>
+            <li>
+            • Lazaroth daje teraz więcej złota za wykonanie jego zadania ze świątynią.
+            </li>
+            <li>
+            • Dodano więcej strzał i bełtów do kupienia u kupca Prahla.
+            </li>
+          </ul>
+
+        
+          <p className="italic">
+            2024-05-08
+          </p>
+        </article>
+        <hr className="styledHr my-6" />
+
+
         <article>
           <h1 className="text-lg text-orange-400">
-          Aktualizacja 1.1 (Finalna)
+          Aktualizacja 1.1
           </h1>
         <ul className="text-orange-200">
         <li>
@@ -94,7 +143,7 @@ const News = () => {
            
           </ul>
 
-         <br></br>
+       
           <p className="italic">
             2024-05-04
           </p>
