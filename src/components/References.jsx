@@ -12,7 +12,7 @@ export const References = () => {
     <div className="flex justify-center space-x-12 p-12  h-80">
       <div className="mt-12">
         <a
-          href="https://discord.com/invite/kajma"
+          href="https://discord.gg/TD9jv9vv"
           target="_blank"
           rel="noopener noreferrer"
         >
