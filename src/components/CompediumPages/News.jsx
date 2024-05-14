@@ -16,11 +16,61 @@ const News = () => {
         </h1>
        
 
+        <article>
+          <h1 className="text-lg text-orange-400">
+          Aktualizacja 1.3 (Finalna)
+          </h1>
+        <ul className="text-orange-200">
+        <li>
+        • Dodano wolną regenerację many do pasa dla maga.
+            </li>
+
+            <li>
+        • Zmniejszono odporność na magię potworom na poziomach balanced i ultra o 10 – 30.
+            </li>
+            <li>
+        • Zmniejszono konsumpcję many większości czarów na wszystkich poziomach trudności za wyjątkiem większości czarów ładujących.
+            </li>
+            <li>
+        • Elias w ramach nagrody za drugie zadanie daje nam teraz runę powtarzalnej strzały zamiast pięści wichru, jeśli mamy co najmniej 2 krąg magii.
+            </li>
+            <li>
+        • Dodano nieśmiertelność Javierowi i Ardaricowi dopóki ich rola fabularnie nie dobiegnie końca.
+            </li>
+            <li>
+        • Zbalansowano mnożnik wartości obrażeń ładowanych czarów względem innych.
+            </li>
+            <li>
+        • Zastąpiono monolog Leo wpisem do dziennika przed przeprawą na Luzon.
+            </li>
+            <li>
+        • Poprawiono znikanie opcji nauki umiejętności u Lazarotha w przypadku, gdy nie mamy złota.
+            </li>
+            <li>
+        • Dodano konsekwencje za dostarczenie otwartego raportu Wascara.
+            </li>
+            <li>
+        • Dodano wpis w dzienniku podczas akcji z Celciusem mającej miejsce w jaskini.
+            </li>
+            <li>
+        • Usunięto podwójną opcję KONIEC u Mentora w grocie.
+            </li>
+            <li>
+        • Poprawiono warunki dialogowe u Hiago i Focusa oraz kolejność dialogu Galosa powodujące nieimersyjność.
+            </li>
+      </ul>
+
+      <p className="italic">
+            2024-05-14
+          </p>
+            </article>
+
+
         <hr className="styledHr my-6" />
    
     <article>
           <h1 className="text-lg text-orange-400">
-          Aktualizacja 1.2 (Finalna)
+          Aktualizacja 1.2 
           </h1>
         <ul className="text-orange-200">
         <li>

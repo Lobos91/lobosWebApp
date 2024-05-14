@@ -80,8 +80,8 @@ const Installation = () => {
           </details>
 
           <h1>
-            7. Pobierz modyfikację Lobos ze strony i rozpakuj pobrany folder np.
-            programem WinRar.
+            7. Pobierz interesującą cię wersję modyfikacji Lobos ze strony (Do wybory google drive lub moddb) i rozpakuj pobrany folder np.
+            programem WinRar. Jeśli pobierasz Lobos Definitive Edition, pobierz również dubbing, który jest osobnym plikiem nazwanym Lobos Definitive Edition DubbingPL.
           </h1>
           <h1 className="pl-4 ">
             Skopiuj pliki z wypakowanego folderu do odpowiadających im folderów
@@ -90,7 +90,7 @@ const Installation = () => {
           <h1 className="pl-4 ">
             Dla przykładu pliki z folderu System wklej do Gothic2/System. Pliki
             z folderu modvdf wklej do Gothic2/Data/modvdf. Postępuj analogicznie
-            z pozostałymi plikami.
+            z pozostałymi plikami. 
           </h1>
           <h1>8. Odpalaj grę używajac GothicStarter.exe</h1>
           <h1 className=" text-xl pt-4 text-orange-400">Uwagi</h1>
